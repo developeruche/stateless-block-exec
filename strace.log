@@ -1,522 +1,164 @@
-execve("/usr/bin/qemu-riscv64", ["qemu-riscv64", "-L", "/usr/riscv64-linux-gnu", "./target/riscv64gc-unknown-linux"...], 0x7ffcf8c69d28 /* 24 vars */) = 0
-brk(NULL)                               = 0x55b4e2c9f000
-mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x70dbf6062000
-access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+execve("./exec-block", ["./exec-block"], 0x7fffd524f9a0 /* 26 vars */) = 0
+brk(NULL)                               = 0x5561e24b5000
+faccessat(AT_FDCWD, "/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
-fstat(3, {st_mode=S_IFREG|0644, st_size=73755, ...}) = 0
-mmap(NULL, 73755, PROT_READ, MAP_PRIVATE, 3, 0) = 0x70dbf604f000
+fstat(3, {st_mode=S_IFREG|0644, st_size=21523, ...}) = 0
+mmap(NULL, 21523, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7ffce617e000
 close(3)                                = 0
-openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libm.so.6", O_RDONLY|O_CLOEXEC) = 3
-read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
-fstat(3, {st_mode=S_IFREG|0644, st_size=952616, ...}) = 0
-mmap(NULL, 950296, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x70dbf5f66000
-mmap(0x70dbf5f76000, 520192, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x10000) = 0x70dbf5f76000
-mmap(0x70dbf5ff5000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x8f000) = 0x70dbf5ff5000
-mmap(0x70dbf604d000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xe7000) = 0x70dbf604d000
-close(3)                                = 0
-openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libglib-2.0.so.0", O_RDONLY|O_CLOEXEC) = 3
-read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
-fstat(3, {st_mode=S_IFREG|0644, st_size=1343056, ...}) = 0
-mmap(NULL, 1343952, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x70dbf5e1d000
-mmap(0x70dbf5e3b000, 655360, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1e000) = 0x70dbf5e3b000
-mmap(0x70dbf5edb000, 557056, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xbe000) = 0x70dbf5edb000
-mmap(0x70dbf5f63000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x146000) = 0x70dbf5f63000
-mmap(0x70dbf5f65000, 464, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x70dbf5f65000
-close(3)                                = 0
-openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
-read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\220\243\2\0\0\0\0\0"..., 832) = 832
-pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
-fstat(3, {st_mode=S_IFREG|0755, st_size=2125328, ...}) = 0
-pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
-mmap(NULL, 2170256, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x70dbf5c00000
-mmap(0x70dbf5c28000, 1605632, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x70dbf5c28000
-mmap(0x70dbf5db0000, 323584, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1b0000) = 0x70dbf5db0000
-mmap(0x70dbf5dff000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1fe000) = 0x70dbf5dff000
-mmap(0x70dbf5e05000, 52624, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x70dbf5e05000
-close(3)                                = 0
-openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpcre2-8.so.0", O_RDONLY|O_CLOEXEC) = 3
-read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
-fstat(3, {st_mode=S_IFREG|0644, st_size=625344, ...}) = 0
-mmap(NULL, 627472, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x70dbf5b66000
-mmap(0x70dbf5b68000, 450560, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x70dbf5b68000
-mmap(0x70dbf5bd6000, 163840, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x70000) = 0x70dbf5bd6000
-mmap(0x70dbf5bfe000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x97000) = 0x70dbf5bfe000
-close(3)                                = 0
-mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x70dbf5e1b000
-arch_prctl(ARCH_SET_FS, 0x70dbf5e1c200) = 0
-set_tid_address(0x70dbf5e1c4d0)         = 109614
-set_robust_list(0x70dbf5e1c4e0, 24)     = 0
-rseq(0x70dbf5e1cb20, 0x20, 0, 0x53053053) = 0
-mprotect(0x70dbf5dff000, 16384, PROT_READ) = 0
-mprotect(0x70dbf5bfe000, 4096, PROT_READ) = 0
-mprotect(0x70dbf604d000, 4096, PROT_READ) = 0
-mprotect(0x70dbf5f63000, 4096, PROT_READ) = 0
-mprotect(0x55b4b96fe000, 360448, PROT_READ) = 0
-mprotect(0x70dbf609a000, 8192, PROT_READ) = 0
-prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
-munmap(0x70dbf604f000, 73755)           = 0
-getrandom("\x56\x54\xb2\xd3\x8e\x2f\xdc\x1a", 8, GRND_NONBLOCK) = 8
-brk(NULL)                               = 0x55b4e2c9f000
-brk(0x55b4e2cc0000)                     = 0x55b4e2cc0000
-rt_sigprocmask(SIG_SETMASK, ~[ILL FPE SEGV RTMIN RT_1], [], 8) = 0
-rt_sigaction(SIGRT_1, {sa_handler=0x70dbf5c99520, sa_mask=[], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x70dbf5c45320}, NULL, 8) = 0
-rt_sigprocmask(SIG_UNBLOCK, [RTMIN RT_1], NULL, 8) = 0
-mmap(NULL, 8392704, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x70dbf5200000
-mprotect(0x70dbf5201000, 8388608, PROT_READ|PROT_WRITE) = 0
-rt_sigprocmask(SIG_BLOCK, ~[], ~[ILL FPE KILL SEGV STOP RTMIN RT_1], 8) = 0
-clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x70dbf5a00990, parent_tid=0x70dbf5a00990, exit_signal=0, stack=0x70dbf5200000, stack_size=0x7ffec0, tls=0x70dbf5a006c0} => {parent_tid=[109615]}, 88) = 109615
-rt_sigprocmask(SIG_SETMASK, ~[ILL FPE KILL SEGV STOP RTMIN RT_1], NULL, 8) = 0
-rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
-prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
-uname({sysname="Linux", nodename="madab", ...}) = 0
-openat(AT_FDCWD, "./target/riscv64gc-unknown-linux-gnu/release/exec-block", O_RDONLY) = 3
-getcwd("/home/guest/Documents/duc-works/exec-block", 1024) = 43
-readlink("/home/guest/Documents/duc-works/exec-block/target", 0x7ffdd1b72f20, 1023) = -1 EINVAL (Invalid argument)
-readlink("/home/guest/Documents/duc-works/exec-block/target/riscv64gc-unknown-linux-gnu", 0x7ffdd1b72f20, 1023) = -1 EINVAL (Invalid argument)
-readlink("/home/guest/Documents/duc-works/exec-block/target/riscv64gc-unknown-linux-gnu/release", 0x7ffdd1b72f20, 1023) = -1 EINVAL (Invalid argument)
-readlink("/home/guest/Documents/duc-works/exec-block/target/riscv64gc-unknown-linux-gnu/release/exec-block", 0x7ffdd1b72f20, 1023) = -1 EINVAL (Invalid argument)
-lseek(3, 0, SEEK_SET)                   = 0
-read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\363\0\1\0\0\0\334\353\3\0\0\0\0\0"..., 64) = 64
-lseek(3, 0, SEEK_SET)                   = 0
-mmap(NULL, 528384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x70dbf5ae5000
-sysinfo({uptime=47931, loads=[1216, 1120, 0], totalram=16538324992, freeram=1196007424, sharedram=545153024, bufferram=300584960, totalswap=4294963200, freeswap=4294963200, procs=1302, totalhigh=0, freehigh=0, mem_unit=1}) = 0
-mmap(NULL, 134217728, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x70dbe8000000
-madvise(0x70dbe8000000, 134217728, MADV_HUGEPAGE) = 0
-mprotect(0x70dbe8000000, 134213632, PROT_READ|PROT_WRITE|PROT_EXEC) = 0
-brk(0x55b4e2ce1000)                     = 0x55b4e2ce1000
-getrandom(NULL, 0, 0)                   = 0
-openat(AT_FDCWD, "/proc/sys/vm/mmap_min_addr", O_RDONLY) = 4
-fstat(4, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
-read(4, "65536\n", 1024)                = 6
-close(4)                                = 0
-gettid()                                = 109614
-fstat(3, {st_mode=S_IFREG|0775, st_size=5220536, ...}) = 0
-geteuid()                               = 1001
-getegid()                               = 1001
-read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\363\0\1\0\0\0\334\353\3\0\0\0\0\0"..., 1024) = 1024
-mmap(0x555555556000, 4227072, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x555555556000
-mmap(0x555555556000, 4227072, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x555555556000
-mmap(0x555555556000, 4132864, PROT_READ, MAP_PRIVATE|MAP_FIXED, 3, 0) = 0x555555556000
-mmap(0x555555947000, 94208, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED, 3, 0x3f1000) = 0x555555947000
-pread64(3, "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 2048, 5218488) = 2048
-mmap(NULL, 512000, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x70dbf5a68000
-pread64(3, "\0Scrt1.o\0__abi_tag\0$xrv64i2p1_m2"..., 508644, 4709528) = 508644
-mmap(NULL, 487424, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x70dbf5189000
-pread64(3, "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\3\0\1\0"..., 485712, 4223816) = 485712
-mremap(0x70dbf5189000, 487424, 106496, MREMAP_MAYMOVE) = 0x70dbf5189000
-brk(0x55b4e2d10000)                     = 0x55b4e2d10000
-brk(0x55b4e2cf7000)                     = 0x55b4e2cf7000
-brk(0x55b4e2cf6000)                     = 0x55b4e2cf6000
-close(3)                                = 0
-mmap(0x2aaaaaaab000, 8392704, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x2aaaaaaab000
-mmap(0x2aaaaaaab000, 8392704, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x2aaaaaaab000
-mprotect(0x2aaaaaaab000, 4096, PROT_NONE) = 0
-access("/usr/riscv64-linux-gnu/lib/ld-linux-riscv64-lp64d.so.1", F_OK) = 0
-openat(AT_FDCWD, "/usr/riscv64-linux-gnu/lib/ld-linux-riscv64-lp64d.so.1", O_RDONLY) = 3
-read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\363\0\1\0\0\0X\17\1\0\0\0\0\0"..., 1024) = 1024
-mmap(0x2aaaab2ac000, 155648, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x2aaaab2ac000
-mmap(0x2aaaab2ac000, 155648, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x2aaaab2ac000
-mmap(0x2aaaab2ac000, 139264, PROT_READ, MAP_PRIVATE|MAP_FIXED, 3, 0) = 0x2aaaab2ac000
-mmap(0x2aaaab2ce000, 16384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED, 3, 0x21000) = 0x2aaaab2ce000
-pread64(3, "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 1344, 148008) = 1344
-close(3)                                = 0
-mmap(0x2aaaab2d2000, 4096, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x2aaaab2d2000
-mmap(0x2aaaab2d2000, 4096, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x2aaaab2d2000
-mmap(0x2aaaab2d2000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x2aaaab2d2000
-mprotect(0x2aaaab2d2000, 4096, PROT_READ|PROT_WRITE) = 0
-close(-1)                               = -1 EBADF (Bad file descriptor)
-mprotect(0x2aaaab2d2000, 4096, PROT_READ) = 0
-getrandom("\x84\xf6\xb1\x8c\x76\xad\x48\xb5\x30\x33\x34\x8d\xa6\x37\x73\xc3", 16, 0) = 16
-getuid()                                = 1001
-geteuid()                               = 1001
-getgid()                                = 1001
-getegid()                               = 1001
-rt_sigprocmask(SIG_BLOCK, NULL, [], 8)  = 0
-rt_sigaction(SIGHUP, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
-rt_sigaction(SIGINT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
-rt_sigaction(SIGQUIT, {sa_handler=0x55b4b9653460, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_SIGINFO, sa_restorer=0x70dbf5c45320}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
-rt_sigaction(SIGILL, {sa_handler=0x55b4b9653460, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_SIGINFO, sa_restorer=0x70dbf5c45320}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
-rt_sigaction(SIGTRAP, {sa_handler=0x55b4b9653460, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_SIGINFO, sa_restorer=0x70dbf5c45320}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
-rt_sigaction(SIGABRT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
-rt_sigaction(SIGRT_2, {sa_handler=0x55b4b9653460, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_SIGINFO, sa_restorer=0x70dbf5c45320}, NULL, 8) = 0
-rt_sigaction(SIGBUS, {sa_handler=0x55b4b9653460, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_SIGINFO, sa_restorer=0x70dbf5c45320}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
-rt_sigaction(SIGFPE, {sa_handler=0x55b4b9653460, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_SIGINFO, sa_restorer=0x70dbf5c45320}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
-rt_sigaction(SIGKILL, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
-rt_sigaction(SIGUSR1, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
-rt_sigaction(SIGSEGV, {sa_handler=0x55b4b9653460, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_SIGINFO, sa_restorer=0x70dbf5c45320}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
-rt_sigaction(SIGUSR2, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
-rt_sigaction(SIGPIPE, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
-rt_sigaction(SIGALRM, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
-rt_sigaction(SIGTERM, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
-rt_sigaction(SIGSTKFLT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
-rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
-rt_sigaction(SIGCONT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
-rt_sigaction(SIGSTOP, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
-rt_sigaction(SIGTSTP, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
-rt_sigaction(SIGTTIN, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
-rt_sigaction(SIGTTOU, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
-rt_sigaction(SIGURG, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
-rt_sigaction(SIGXCPU, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
-rt_sigaction(SIGXFSZ, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
-rt_sigaction(SIGVTALRM, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
-rt_sigaction(SIGPROF, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
-rt_sigaction(SIGWINCH, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
-rt_sigaction(SIGIO, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
-rt_sigaction(SIGPWR, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
-rt_sigaction(SIGSYS, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
-rt_sigaction(SIGRT_3, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
-rt_sigaction(SIGRT_4, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
-rt_sigaction(SIGRT_5, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
-rt_sigaction(SIGRT_6, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
-rt_sigaction(SIGRT_7, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
-rt_sigaction(SIGRT_8, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
-rt_sigaction(SIGRT_9, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
-rt_sigaction(SIGRT_10, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
-rt_sigaction(SIGRT_11, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
-rt_sigaction(SIGRT_12, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
-rt_sigaction(SIGRT_13, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
-rt_sigaction(SIGRT_14, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
-rt_sigaction(SIGRT_15, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
-rt_sigaction(SIGRT_16, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
-rt_sigaction(SIGRT_17, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
-rt_sigaction(SIGRT_18, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
-rt_sigaction(SIGRT_19, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
-rt_sigaction(SIGRT_20, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
-rt_sigaction(SIGRT_21, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
-rt_sigaction(SIGRT_22, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
-rt_sigaction(SIGRT_23, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
-rt_sigaction(SIGRT_24, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
-rt_sigaction(SIGRT_25, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
-rt_sigaction(SIGRT_26, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
-rt_sigaction(SIGRT_27, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
-rt_sigaction(SIGRT_28, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
-rt_sigaction(SIGRT_29, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
-rt_sigaction(SIGRT_30, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
-rt_sigaction(SIGRT_31, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
-rt_sigaction(SIGRT_32, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
-futex(0x70dbf5f64de8, FUTEX_WAKE_PRIVATE, 2147483647) = 0
-futex(0x70dbf5f64de8, FUTEX_WAKE_PRIVATE, 2147483647) = 0
-faccessat2(AT_FDCWD, "/etc/ld.so.preload", R_OK, 0) = -1 ENOENT (No such file or directory)
-readlink("/etc", 0x7ffdd1b71a10, 1023)  = -1 EINVAL (Invalid argument)
-readlink("/etc/ld.so.cache", 0x7ffdd1b71a10, 1023) = -1 EINVAL (Invalid argument)
-access("/usr/riscv64-linux-gnu/etc/ld.so.cache", F_OK) = -1 ENOENT (No such file or directory)
-openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
-fstat(3, {st_mode=S_IFREG|0644, st_size=73755, ...}) = 0
-mmap(0x2aaaab2d3000, 77824, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x2aaaab2d3000
-mmap(0x2aaaab2d3000, 77824, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x2aaaab2d3000
-mmap(0x2aaaab2d3000, 77824, PROT_READ, MAP_PRIVATE|MAP_FIXED, 3, 0) = 0x2aaaab2d3000
-close(3)                                = 0
-readlink("/lib", "usr/lib", 1023)       = 7
-readlink("/usr", 0x7ffdd1b71a10, 1023)  = -1 EINVAL (Invalid argument)
-readlink("/usr/lib", 0x7ffdd1b71a10, 1023) = -1 EINVAL (Invalid argument)
-readlink("/usr/lib/riscv64-linux-gnu", 0x7ffdd1b71a10, 1023) = -1 EINVAL (Invalid argument)
-readlink("/usr/lib/riscv64-linux-gnu/libc.so.6", 0x7ffdd1b71a10, 1023) = -1 ENOENT (No such file or directory)
-access("/usr/riscv64-linux-gnu/lib/riscv64-linux-gnu/libc.so.6", F_OK) = -1 ENOENT (No such file or directory)
-openat(AT_FDCWD, "/lib/riscv64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
-access("/usr/riscv64-linux-gnu/lib/riscv64-linux-gnu/", F_OK) = -1 ENOENT (No such file or directory)
-newfstatat(AT_FDCWD, "/lib/riscv64-linux-gnu/", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
-readlink("/usr", 0x7ffdd1b71a10, 1023)  = -1 EINVAL (Invalid argument)
-readlink("/usr/lib", 0x7ffdd1b71a10, 1023) = -1 EINVAL (Invalid argument)
-readlink("/usr/lib/riscv64-linux-gnu", 0x7ffdd1b71a10, 1023) = -1 EINVAL (Invalid argument)
-readlink("/usr/lib/riscv64-linux-gnu/libc.so.6", 0x7ffdd1b71a10, 1023) = -1 ENOENT (No such file or directory)
-access("/usr/riscv64-linux-gnu/usr/lib/riscv64-linux-gnu/libc.so.6", F_OK) = -1 ENOENT (No such file or directory)
-openat(AT_FDCWD, "/usr/lib/riscv64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
-access("/usr/riscv64-linux-gnu/usr/lib/riscv64-linux-gnu/", F_OK) = -1 ENOENT (No such file or directory)
-newfstatat(AT_FDCWD, "/usr/lib/riscv64-linux-gnu/", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
-readlink("/lib", "usr/lib", 1023)       = 7
-readlink("/usr", 0x7ffdd1b71a10, 1023)  = -1 EINVAL (Invalid argument)
-readlink("/usr/lib", 0x7ffdd1b71a10, 1023) = -1 EINVAL (Invalid argument)
-readlink("/usr/lib/libc.so.6", 0x7ffdd1b71a10, 1023) = -1 ENOENT (No such file or directory)
-access("/usr/riscv64-linux-gnu/lib/libc.so.6", F_OK) = 0
-openat(AT_FDCWD, "/usr/riscv64-linux-gnu/lib/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+openat(AT_FDCWD, "/lib/riscv64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0\363\0\1\0\0\0Ry\2\0\0\0\0\0"..., 832) = 832
-fstat(3, {st_mode=S_IFREG|0755, st_size=1523848, ...}) = 0
-mmap(0x2aaaab2e6000, 8192, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x2aaaab2e6000
-mmap(0x2aaaab2e6000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x2aaaab2e6000
-mmap(0x2aaaab2e8000, 1568768, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x2aaaab2e8000
-mmap(0x2aaaab2e8000, 1568768, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS|MAP_DENYWRITE, -1, 0) = 0x2aaaab2e8000
-mmap(0x2aaaab2e8000, 1568768, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0) = 0x2aaaab2e8000
-mmap(0x2aaaab456000, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x16e000) = 0x2aaaab456000
-mmap(0x2aaaab45b000, 49152, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x2aaaab45b000
+fstat(3, {st_mode=S_IFREG|0755, st_size=1534120, ...}) = 0
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffce617c000
+mmap(NULL, 1572280, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7ffce5ffc000
+mmap(0x7ffce616b000, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x16f000) = 0x7ffce616b000
+mmap(0x7ffce6170000, 48568, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7ffce6170000
 close(3)                                = 0
-readlink("/lib", "usr/lib", 1023)       = 7
-readlink("/usr", 0x7ffdd1b71a10, 1023)  = -1 EINVAL (Invalid argument)
-readlink("/usr/lib", 0x7ffdd1b71a10, 1023) = -1 EINVAL (Invalid argument)
-readlink("/usr/lib/riscv64-linux-gnu", 0x7ffdd1b71a10, 1023) = -1 EINVAL (Invalid argument)
-readlink("/usr/lib/riscv64-linux-gnu/libm.so.6", 0x7ffdd1b71a10, 1023) = -1 ENOENT (No such file or directory)
-access("/usr/riscv64-linux-gnu/lib/riscv64-linux-gnu/libm.so.6", F_OK) = -1 ENOENT (No such file or directory)
-openat(AT_FDCWD, "/lib/riscv64-linux-gnu/libm.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
-readlink("/usr", 0x7ffdd1b71a10, 1023)  = -1 EINVAL (Invalid argument)
-readlink("/usr/lib", 0x7ffdd1b71a10, 1023) = -1 EINVAL (Invalid argument)
-readlink("/usr/lib/riscv64-linux-gnu", 0x7ffdd1b71a10, 1023) = -1 EINVAL (Invalid argument)
-readlink("/usr/lib/riscv64-linux-gnu/libm.so.6", 0x7ffdd1b71a10, 1023) = -1 ENOENT (No such file or directory)
-access("/usr/riscv64-linux-gnu/usr/lib/riscv64-linux-gnu/libm.so.6", F_OK) = -1 ENOENT (No such file or directory)
-openat(AT_FDCWD, "/usr/lib/riscv64-linux-gnu/libm.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
-readlink("/lib", "usr/lib", 1023)       = 7
-readlink("/usr", 0x7ffdd1b71a10, 1023)  = -1 EINVAL (Invalid argument)
-readlink("/usr/lib", 0x7ffdd1b71a10, 1023) = -1 EINVAL (Invalid argument)
-readlink("/usr/lib/libm.so.6", 0x7ffdd1b71a10, 1023) = -1 ENOENT (No such file or directory)
-access("/usr/riscv64-linux-gnu/lib/libm.so.6", F_OK) = 0
-openat(AT_FDCWD, "/usr/riscv64-linux-gnu/lib/libm.so.6", O_RDONLY|O_CLOEXEC) = 3
+openat(AT_FDCWD, "/lib/riscv64-linux-gnu/libm.so.6", O_RDONLY|O_CLOEXEC) = 3
 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\363\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
 fstat(3, {st_mode=S_IFREG|0644, st_size=514440, ...}) = 0
-mmap(0x2aaaab467000, 516096, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x2aaaab467000
-mmap(0x2aaaab467000, 516096, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS|MAP_DENYWRITE, -1, 0) = 0x2aaaab467000
-mmap(0x2aaaab467000, 516096, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0) = 0x2aaaab467000
-mmap(0x2aaaab4e3000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x7c000) = 0x2aaaab4e3000
+mmap(NULL, 516112, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7ffce5f7d000
+mmap(0x7ffce5ffa000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x7c000) = 0x7ffce5ffa000
 close(3)                                = 0
-readlink("/lib", "usr/lib", 1023)       = 7
-readlink("/usr", 0x7ffdd1b71a10, 1023)  = -1 EINVAL (Invalid argument)
-readlink("/usr/lib", 0x7ffdd1b71a10, 1023) = -1 EINVAL (Invalid argument)
-readlink("/usr/lib/riscv64-linux-gnu", 0x7ffdd1b71a10, 1023) = -1 EINVAL (Invalid argument)
-readlink("/usr/lib/riscv64-linux-gnu/libgcc_s.so.1", 0x7ffdd1b71a10, 1023) = -1 ENOENT (No such file or directory)
-access("/usr/riscv64-linux-gnu/lib/riscv64-linux-gnu/libgcc_s.so.1", F_OK) = -1 ENOENT (No such file or directory)
-openat(AT_FDCWD, "/lib/riscv64-linux-gnu/libgcc_s.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
-readlink("/usr", 0x7ffdd1b71a10, 1023)  = -1 EINVAL (Invalid argument)
-readlink("/usr/lib", 0x7ffdd1b71a10, 1023) = -1 EINVAL (Invalid argument)
-readlink("/usr/lib/riscv64-linux-gnu", 0x7ffdd1b71a10, 1023) = -1 EINVAL (Invalid argument)
-readlink("/usr/lib/riscv64-linux-gnu/libgcc_s.so.1", 0x7ffdd1b71a10, 1023) = -1 ENOENT (No such file or directory)
-access("/usr/riscv64-linux-gnu/usr/lib/riscv64-linux-gnu/libgcc_s.so.1", F_OK) = -1 ENOENT (No such file or directory)
-openat(AT_FDCWD, "/usr/lib/riscv64-linux-gnu/libgcc_s.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
-readlink("/lib", "usr/lib", 1023)       = 7
-readlink("/usr", 0x7ffdd1b71a10, 1023)  = -1 EINVAL (Invalid argument)
-readlink("/usr/lib", 0x7ffdd1b71a10, 1023) = -1 EINVAL (Invalid argument)
-readlink("/usr/lib/libgcc_s.so.1", 0x7ffdd1b71a10, 1023) = -1 ENOENT (No such file or directory)
-access("/usr/riscv64-linux-gnu/lib/libgcc_s.so.1", F_OK) = 0
-openat(AT_FDCWD, "/usr/riscv64-linux-gnu/lib/libgcc_s.so.1", O_RDONLY|O_CLOEXEC) = 3
+openat(AT_FDCWD, "/lib/riscv64-linux-gnu/libgcc_s.so.1", O_RDONLY|O_CLOEXEC) = 3
 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\363\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
-fstat(3, {st_mode=S_IFREG|0644, st_size=117152, ...}) = 0
-mmap(0x2aaaab4e5000, 122880, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x2aaaab4e5000
-mmap(0x2aaaab4e5000, 122880, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS|MAP_DENYWRITE, -1, 0) = 0x2aaaab4e5000
-mmap(0x2aaaab4e5000, 122880, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0) = 0x2aaaab4e5000
-mmap(0x2aaaab501000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1b000) = 0x2aaaab501000
+fstat(3, {st_mode=S_IFREG|0644, st_size=117288, ...}) = 0
+mmap(NULL, 119728, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7ffce5f5f000
+mmap(0x7ffce5f7b000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1b000) = 0x7ffce5f7b000
 close(3)                                = 0
-mmap(0x2aaaab503000, 8192, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x2aaaab503000
-mmap(0x2aaaab503000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x2aaaab503000
-brk(0x55b4e2d17000)                     = 0x55b4e2d17000
-gettid()                                = 109614
-mprotect(0x2aaaab456000, 12288, PROT_READ) = 0
-mprotect(0x2aaaab501000, 4096, PROT_READ) = 0
-mprotect(0x2aaaab4e3000, 4096, PROT_READ) = 0
-mprotect(0x555555947000, 86016, PROT_READ) = 0
-mprotect(0x2aaaab2ce000, 8192, PROT_READ) = 0
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffce5f5d000
+set_tid_address(0x7ffce5f5d0f0)         = 2154
+set_robust_list(0x7ffce5f5d100, 24)     = 0
+mprotect(0x7ffce616b000, 12288, PROT_READ) = 0
+mprotect(0x7ffce5f7b000, 4096, PROT_READ) = 0
+mprotect(0x7ffce5ffa000, 4096, PROT_READ) = 0
+mprotect(0x5561d27bc000, 73728, PROT_READ) = 0
+mprotect(0x7ffce61aa000, 8192, PROT_READ) = 0
 prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
-munmap(0x2aaaab2d3000, 77824)           = 0
-ppoll([{fd=0, events=0}, {fd=1, events=0}, {fd=2, events=0}], 3, {tv_sec=0, tv_nsec=0}, NULL, 8) = 0 (Timeout)
-rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1], NULL, 8) = 0
-rt_sigaction(SIGPIPE, {sa_handler=SIG_IGN, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_SIGINFO, sa_restorer=0x70dbf5c45320}, NULL, 8) = 0
-rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1], NULL, 8) = 0
-rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
-getrandom("\x61\x5f\x04\x07\x13\xa6\x20\x48", 8, GRND_NONBLOCK) = 8
-mmap(0x55555595e000, 135168, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_FIXED_NOREPLACE, -1, 0) = 0x55555595e000
-readlink("/proc", 0x7ffdd1b71a10, 1023) = -1 EINVAL (Invalid argument)
-readlink("/proc/self", "109614", 1023)  = 6
-readlink("/proc/109614", 0x7ffdd1b71a10, 1023) = -1 EINVAL (Invalid argument)
-readlink("/proc/109614/maps", 0x7ffdd1b71a10, 1023) = -1 EINVAL (Invalid argument)
-getpid()                                = 109614
-getpid()                                = 109614
-memfd_create("qemu-open", 0)            = 3
-openat(AT_FDCWD, "/proc/self/maps", O_RDONLY|O_CLOEXEC) = 4
-fstat(4, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
-fcntl(4, F_GETFL)                       = 0x8000 (flags O_RDONLY|O_LARGEFILE)
-fstat(4, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
-read(4, "2aaaaaaab000-2aaaaaaac000 ---p 0"..., 4096) = 4053
-read(4, "70dbf5db0000-70dbf5dff000 r--p 0"..., 1024) = 1024
-read(4, "2.0.so.0.8000.0\n70dbf5f65000-70d"..., 3072) = 1584
-read(4, "", 1024)                       = 0
-close(4)                                = 0
-write(3, "2aaaaaaab000-2aaaaaaac000 ---p 0"..., 47) = 47
-write(3, "                          \n", 27) = 27
-write(3, "2aaaaaaac000-2aaaab2ac000 rw-p 0"..., 47) = 47
-write(3, "                          [stack"..., 34) = 34
-write(3, "2aaaab2ac000-2aaaab2ce000 r-xp 0"..., 54) = 54
-write(3, "                   /usr/riscv64-"..., 74) = 74
-write(3, "2aaaab2ce000-2aaaab2d0000 r--p 0"..., 54) = 54
-write(3, "                   /usr/riscv64-"..., 74) = 74
-write(3, "2aaaab2d0000-2aaaab2d2000 rw-p 0"..., 54) = 54
-write(3, "                   /usr/riscv64-"..., 74) = 74
-write(3, "2aaaab2d2000-2aaaab2d3000 r-xp 0"..., 47) = 47
-write(3, "                          [vdso]"..., 33) = 33
-write(3, "2aaaab2e6000-2aaaab2e8000 rw-p 0"..., 47) = 47
-write(3, "                          \n", 27) = 27
-write(3, "2aaaab2e8000-2aaaab456000 r-xp 0"..., 54) = 54
-write(3, "                   /usr/riscv64-"..., 56) = 56
-write(3, "2aaaab456000-2aaaab459000 r--p 0"..., 54) = 54
-write(3, "                   /usr/riscv64-"..., 56) = 56
-write(3, "2aaaab459000-2aaaab45b000 rw-p 0"..., 54) = 54
-write(3, "                   /usr/riscv64-"..., 56) = 56
-write(3, "2aaaab45b000-2aaaab467000 rw-p 0"..., 47) = 47
-write(3, "                          \n", 27) = 27
-write(3, "2aaaab467000-2aaaab4e3000 r-xp 0"..., 54) = 54
-write(3, "                   /usr/riscv64-"..., 56) = 56
-write(3, "2aaaab4e3000-2aaaab4e4000 r--p 0"..., 54) = 54
-write(3, "                   /usr/riscv64-"..., 56) = 56
-write(3, "2aaaab4e4000-2aaaab4e5000 rw-p 0"..., 54) = 54
-write(3, "                   /usr/riscv64-"..., 56) = 56
-write(3, "2aaaab4e5000-2aaaab501000 r-xp 0"..., 54) = 54
-write(3, "                   /usr/riscv64-"..., 60) = 60
-write(3, "2aaaab501000-2aaaab502000 r--p 0"..., 54) = 54
-write(3, "                   /usr/riscv64-"..., 60) = 60
-write(3, "2aaaab502000-2aaaab503000 rw-p 0"..., 54) = 54
-write(3, "                   /usr/riscv64-"..., 60) = 60
-write(3, "2aaaab503000-2aaaab505000 rw-p 0"..., 47) = 47
-write(3, "                          \n", 27) = 27
-write(3, "555555556000-555555947000 r-xp 0"..., 54) = 54
-write(3, "                   /home/guest/D"..., 116) = 116
-write(3, "555555947000-55555595c000 r--p 0"..., 54) = 54
-write(3, "                   /home/guest/D"..., 116) = 116
-write(3, "55555595c000-55555595e000 rw-p 0"..., 54) = 54
-write(3, "                   /home/guest/D"..., 116) = 116
-write(3, "55555595e000-55555597f000 rw-p 0"..., 47) = 47
-write(3, "                          [heap]"..., 33) = 33
-lseek(3, 0, SEEK_SET)                   = 0
+munmap(0x7ffce617e000, 21523)           = 0
+ppoll([{fd=0, events=0}, {fd=1, events=0}, {fd=2, events=0}], 3, {tv_sec=0, tv_nsec=0}, NULL, 0) = 0 (Timeout)
+rt_sigaction(SIGPIPE, {sa_handler=SIG_IGN, sa_mask=[PIPE], sa_flags=SA_RESTART}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+getrandom("\x45\x43\xed\x24\xc1\x27\xf2\xa0", 8, GRND_NONBLOCK) = 8
+brk(NULL)                               = 0x5561e24b5000
+brk(0x5561e24d6000)                     = 0x5561e24d6000
+openat(AT_FDCWD, "/proc/self/maps", O_RDONLY|O_CLOEXEC) = 3
 prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
-fstat(3, {st_mode=S_IFREG|0777, st_size=2433, ...}) = 0
-read(3, "2aaaaaaab000-2aaaaaaac000 ---p 0"..., 4096) = 2433
+fstat(3, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+read(3, "5561d23f0000-5561d27bc000 r-xp 0"..., 1024) = 1024
+read(3, ":01 4667                       /"..., 1024) = 1024
+read(3, "000000 00:00 0                  "..., 1024) = 48
 close(3)                                = 0
-sched_getaffinity(109614, 32, [0 1 2 3 4 5 6 7]) = 8
-rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1], NULL, 8) = 0
-rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1], NULL, 8) = 0
-rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
-mmap(0x2aaaab505000, 12288, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x2aaaab505000
-mmap(0x2aaaab505000, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x2aaaab505000
-mprotect(0x2aaaab505000, 4096, PROT_NONE) = 0
-rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1], NULL, 8) = 0
-rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1], NULL, 8) = 0
-rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
-rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1], NULL, 8) = 0
-rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1], NULL, 8) = 0
-rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
-rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1], NULL, 8) = 0
-rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1], NULL, 8) = 0
-rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
-write(1, "\33[2m2025-07-14T20:08:13.071812Z\33"..., 115) = 115
-brk(0x55b4e2d38000)                     = 0x55b4e2d38000
-write(1, "\33[2m2025-07-14T20:08:13.074077Z\33"..., 119) = 119
-getcwd("/home/guest/Documents/duc-works/exec-block", 1024) = 43
-readlink("/home/guest/Documents/duc-works/exec-block/block_and_witness.json", 0x7ffdd1b71a10, 1023) = -1 EINVAL (Invalid argument)
+sched_getaffinity(2154, 32, [0 1 2 3])  = 8
+rt_sigaction(SIGSEGV, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+sigaltstack(NULL, {ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=0}) = 0
+mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7ffce6181000
+mprotect(0x7ffce6181000, 4096, PROT_NONE) = 0
+sigaltstack({ss_sp=0x7ffce6182000, ss_flags=0, ss_size=8192}, NULL) = 0
+rt_sigaction(SIGSEGV, {sa_handler=0x5561d25e9eee, sa_mask=[], sa_flags=SA_ONSTACK|SA_SIGINFO}, NULL, 8) = 0
+rt_sigaction(SIGBUS, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGBUS, {sa_handler=0x5561d25e9eee, sa_mask=[], sa_flags=SA_ONSTACK|SA_SIGINFO}, NULL, 8) = 0
+write(1, "Starting stateless block validat"..., 36) = 36
 openat(AT_FDCWD, "block_and_witness.json", O_RDONLY|O_CLOEXEC) = 3
-write(1, "\33[2m2025-07-14T20:08:13.074473Z\33"..., 135) = 135
-write(1, "\33[2m2025-07-14T20:08:13.074629Z\33"..., 125) = 125
 statx(3, "", AT_STATX_SYNC_AS_STAT|AT_EMPTY_PATH, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0664, stx_size=9528654, ...}) = 0
 lseek(3, 0, SEEK_CUR)                   = 0
-mmap(0x2aaaab508000, 9531392, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x2aaaab508000
-mmap(0x2aaaab508000, 9531392, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x2aaaab508000
+mmap(NULL, 9531392, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffce5600000
 read(3, "{\n  \"block\": {\n    \"header\": {\n "..., 9528654) = 9528654
 read(3, "", 32)                         = 0
-write(1, "\33[2m2025-07-14T20:08:13.081190Z\33"..., 127) = 127
-brk(0x55b4e2d59000)                     = 0x55b4e2d59000
-mmap(0x55555597f000, 200704, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_FIXED_NOREPLACE, -1, 0) = 0x55555597f000
-munmap(0x5555559a7000, 36864)           = 0
-futex(0x55b4b977f8b0, FUTEX_WAKE, 2147483647) = 1
-mmap(0x5555559a7000, 135168, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_FIXED_NOREPLACE, -1, 0) = 0x5555559a7000
-mmap(0x5555559c8000, 135168, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_FIXED_NOREPLACE, -1, 0) = 0x5555559c8000
-mmap(0x5555559e9000, 135168, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_FIXED_NOREPLACE, -1, 0) = 0x5555559e9000
-mmap(0x555555a0a000, 135168, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_FIXED_NOREPLACE, -1, 0) = 0x555555a0a000
-mmap(0x555555a2b000, 135168, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_FIXED_NOREPLACE, -1, 0) = 0x555555a2b000
-mmap(0x555555a4c000, 135168, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_FIXED_NOREPLACE, -1, 0) = 0x555555a4c000
-mmap(0x555555a6d000, 135168, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_FIXED_NOREPLACE, -1, 0) = 0x555555a6d000
-mmap(0x555555a8e000, 135168, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_FIXED_NOREPLACE, -1, 0) = 0x555555a8e000
-mmap(0x555555aaf000, 135168, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_FIXED_NOREPLACE, -1, 0) = 0x555555aaf000
-mmap(0x555555ad0000, 135168, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_FIXED_NOREPLACE, -1, 0) = 0x555555ad0000
-mmap(0x555555af1000, 135168, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_FIXED_NOREPLACE, -1, 0) = 0x555555af1000
-mmap(0x2aaaabe1f000, 266240, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x2aaaabe1f000
-mmap(0x2aaaabe1f000, 266240, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x2aaaabe1f000
-mmap(0x555555b12000, 135168, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_FIXED_NOREPLACE, -1, 0) = 0x555555b12000
-mmap(0x555555b33000, 135168, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_FIXED_NOREPLACE, -1, 0) = 0x555555b33000
-mmap(0x555555b54000, 135168, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_FIXED_NOREPLACE, -1, 0) = 0x555555b54000
-mmap(0x555555b75000, 135168, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_FIXED_NOREPLACE, -1, 0) = 0x555555b75000
-mmap(0x555555b96000, 135168, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_FIXED_NOREPLACE, -1, 0) = 0x555555b96000
-mmap(0x555555bb7000, 135168, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_FIXED_NOREPLACE, -1, 0) = 0x555555bb7000
-mmap(0x555555bd8000, 135168, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_FIXED_NOREPLACE, -1, 0) = 0x555555bd8000
-mmap(0x555555bf9000, 147456, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_FIXED_NOREPLACE, -1, 0) = 0x555555bf9000
-mmap(0x555555c1d000, 135168, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_FIXED_NOREPLACE, -1, 0) = 0x555555c1d000
-mmap(0x555555c3e000, 135168, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_FIXED_NOREPLACE, -1, 0) = 0x555555c3e000
-mmap(0x555555c5f000, 151552, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_FIXED_NOREPLACE, -1, 0) = 0x555555c5f000
-mmap(0x555555c84000, 139264, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_FIXED_NOREPLACE, -1, 0) = 0x555555c84000
-mmap(0x555555ca6000, 151552, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_FIXED_NOREPLACE, -1, 0) = 0x555555ca6000
-mmap(0x555555ccb000, 139264, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_FIXED_NOREPLACE, -1, 0) = 0x555555ccb000
-mmap(0x555555ced000, 151552, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_FIXED_NOREPLACE, -1, 0) = 0x555555ced000
-mmap(0x555555d12000, 139264, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_FIXED_NOREPLACE, -1, 0) = 0x555555d12000
-mmap(0x555555d34000, 135168, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_FIXED_NOREPLACE, -1, 0) = 0x555555d34000
-mmap(0x555555d55000, 155648, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_FIXED_NOREPLACE, -1, 0) = 0x555555d55000
-mmap(0x555555d7b000, 139264, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_FIXED_NOREPLACE, -1, 0) = 0x555555d7b000
-mmap(0x555555d9d000, 143360, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_FIXED_NOREPLACE, -1, 0) = 0x555555d9d000
-mmap(0x555555dc0000, 135168, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_FIXED_NOREPLACE, -1, 0) = 0x555555dc0000
-mmap(0x555555de1000, 135168, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_FIXED_NOREPLACE, -1, 0) = 0x555555de1000
-mmap(0x555555e02000, 139264, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_FIXED_NOREPLACE, -1, 0) = 0x555555e02000
-write(1, "\33[2m2025-07-14T20:08:13.134025Z\33"..., 137) = 137
-munmap(0x2aaaab508000, 9531392)         = 0
 close(3)                                = 0
-brk(0x55b4e2d7a000)                     = 0x55b4e2d7a000
-write(1, "\33[2m2025-07-14T20:08:13.135031Z\33"..., 122) = 122
-brk(0x55b4e2d79000)                     = 0x55b4e2d79000
-mmap(0x555555e24000, 135168, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_FIXED_NOREPLACE, -1, 0) = 0x555555e24000
-mmap(0x555555e45000, 135168, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_FIXED_NOREPLACE, -1, 0) = 0x555555e45000
-mmap(0x555555e66000, 135168, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_FIXED_NOREPLACE, -1, 0) = 0x555555e66000
-mmap(0x555555e87000, 135168, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_FIXED_NOREPLACE, -1, 0) = 0x555555e87000
-mmap(0x555555ea8000, 135168, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_FIXED_NOREPLACE, -1, 0) = 0x555555ea8000
-mmap(0x555555ec9000, 135168, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_FIXED_NOREPLACE, -1, 0) = 0x555555ec9000
-mmap(0x555555eea000, 135168, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_FIXED_NOREPLACE, -1, 0) = 0x555555eea000
-mmap(0x555555f0b000, 135168, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_FIXED_NOREPLACE, -1, 0) = 0x555555f0b000
-mmap(0x555555f2c000, 135168, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_FIXED_NOREPLACE, -1, 0) = 0x555555f2c000
-mmap(0x555555f4d000, 135168, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_FIXED_NOREPLACE, -1, 0) = 0x555555f4d000
-mmap(0x555555f6e000, 135168, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_FIXED_NOREPLACE, -1, 0) = 0x555555f6e000
-mmap(0x555555f8f000, 135168, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_FIXED_NOREPLACE, -1, 0) = 0x555555f8f000
-mmap(0x555555fb0000, 135168, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_FIXED_NOREPLACE, -1, 0) = 0x555555fb0000
-mmap(0x555555fd1000, 135168, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_FIXED_NOREPLACE, -1, 0) = 0x555555fd1000
-mmap(0x555555ff2000, 135168, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_FIXED_NOREPLACE, -1, 0) = 0x555555ff2000
-mmap(0x555556013000, 135168, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_FIXED_NOREPLACE, -1, 0) = 0x555556013000
-mmap(0x555556034000, 135168, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_FIXED_NOREPLACE, -1, 0) = 0x555556034000
-mmap(0x555556055000, 135168, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_FIXED_NOREPLACE, -1, 0) = 0x555556055000
-mmap(0x555556076000, 135168, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_FIXED_NOREPLACE, -1, 0) = 0x555556076000
-mmap(0x555556097000, 135168, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_FIXED_NOREPLACE, -1, 0) = 0x555556097000
-mmap(0x5555560b8000, 135168, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_FIXED_NOREPLACE, -1, 0) = 0x5555560b8000
-mmap(0x5555560d9000, 1740800, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_FIXED_NOREPLACE, -1, 0) = 0x5555560d9000
-mmap(0x555556282000, 135168, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_FIXED_NOREPLACE, -1, 0) = 0x555556282000
-mmap(0x5555562a3000, 135168, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_FIXED_NOREPLACE, -1, 0) = 0x5555562a3000
-mmap(0x5555562c4000, 135168, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_FIXED_NOREPLACE, -1, 0) = 0x5555562c4000
-mmap(0x5555562e5000, 135168, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_FIXED_NOREPLACE, -1, 0) = 0x5555562e5000
-mmap(0x555556306000, 135168, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_FIXED_NOREPLACE, -1, 0) = 0x555556306000
-mmap(0x555556327000, 135168, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_FIXED_NOREPLACE, -1, 0) = 0x555556327000
-mmap(0x555556348000, 135168, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_FIXED_NOREPLACE, -1, 0) = 0x555556348000
-mmap(0x555556369000, 135168, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_FIXED_NOREPLACE, -1, 0) = 0x555556369000
-mmap(0x55555638a000, 135168, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_FIXED_NOREPLACE, -1, 0) = 0x55555638a000
-mmap(0x5555563ab000, 1654784, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_FIXED_NOREPLACE, -1, 0) = 0x5555563ab000
-write(1, "\33[2m2025-07-14T20:08:13.376443Z\33"..., 109) = 109
-brk(0x55b4e2d9a000)                     = 0x55b4e2d9a000
-brk(0x55b4e2d99000)                     = 0x55b4e2d99000
-brk(0x55b4e2dba000)                     = 0x55b4e2dba000
-mmap(0x55555653f000, 143360, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_FIXED_NOREPLACE, -1, 0) = 0x55555653f000
-mmap(0x555556562000, 143360, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_FIXED_NOREPLACE, -1, 0) = 0x555556562000
-mmap(0x555556585000, 151552, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_FIXED_NOREPLACE, -1, 0) = 0x555556585000
-mmap(0x5555565aa000, 135168, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_FIXED_NOREPLACE, -1, 0) = 0x5555565aa000
-mmap(0x5555565cb000, 135168, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_FIXED_NOREPLACE, -1, 0) = 0x5555565cb000
-mmap(0x5555565ec000, 135168, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_FIXED_NOREPLACE, -1, 0) = 0x5555565ec000
-mmap(0x55555660d000, 135168, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_FIXED_NOREPLACE, -1, 0) = 0x55555660d000
-mmap(0x55555662e000, 147456, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_FIXED_NOREPLACE, -1, 0) = 0x55555662e000
-mmap(0x555556652000, 139264, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_FIXED_NOREPLACE, -1, 0) = 0x555556652000
-mmap(0x555556674000, 135168, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_FIXED_NOREPLACE, -1, 0) = 0x555556674000
-mmap(0x555556695000, 135168, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_FIXED_NOREPLACE, -1, 0) = 0x555556695000
-mmap(0x5555566b6000, 180224, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_FIXED_NOREPLACE, -1, 0) = 0x5555566b6000
-mmap(0x5555566e2000, 372736, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_FIXED_NOREPLACE, -1, 0) = 0x5555566e2000
-mmap(0x55555673d000, 229376, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_FIXED_NOREPLACE, -1, 0) = 0x55555673d000
-mmap(0x555556775000, 495616, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_FIXED_NOREPLACE, -1, 0) = 0x555556775000
-mmap(0x5555567ee000, 991232, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_FIXED_NOREPLACE, -1, 0) = 0x5555567ee000
-mmap(0x5555568e0000, 917504, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_FIXED_NOREPLACE, -1, 0) = 0x5555568e0000
-mmap(0x5555569c0000, 1982464, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_FIXED_NOREPLACE, -1, 0) = 0x5555569c0000
-mmap(0x555556ba4000, 3964928, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_FIXED_NOREPLACE, -1, 0) = 0x555556ba4000
-mmap(0x555556f6c000, 7929856, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_FIXED_NOREPLACE, -1, 0) = 0x555556f6c000
-mmap(0x5555576fc000, 991232, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_FIXED_NOREPLACE, -1, 0) = 0x5555576fc000
-mmap(0x5555577ee000, 495616, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_FIXED_NOREPLACE, -1, 0) = 0x5555577ee000
-brk(0x55b4e2ddb000)                     = 0x55b4e2ddb000
-brk(0x55b4e2dda000)                     = 0x55b4e2dda000
-brk(0x55b4e2dfb000)                     = 0x55b4e2dfb000
-brk(0x55b4e2e1c000)                     = 0x55b4e2e1c000
-brk(0x55b4e2e3d000)                     = 0x55b4e2e3d000
-munmap(0x2aaaabe1f000, 266240)          = 0
-futex(0x55b4b9781920, FUTEX_WAKE, 2147483647) = 1
-write(1, "\33[2m2025-07-14T20:08:14.310554Z\33"..., 119) = 119
-munmap(0x2aaaab505000, 12288)           = 0
+brk(0x5561e24f7000)                     = 0x5561e24f7000
+brk(0x5561e2518000)                     = 0x5561e2518000
+brk(0x5561e2539000)                     = 0x5561e2539000
+brk(0x5561e2569000)                     = 0x5561e2569000
+brk(0x5561e258a000)                     = 0x5561e258a000
+brk(0x5561e25ab000)                     = 0x5561e25ab000
+mmap(NULL, 135168, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffce5f3c000
+brk(0x5561e25cc000)                     = 0x5561e25cc000
+brk(0x5561e25ed000)                     = 0x5561e25ed000
+brk(0x5561e260e000)                     = 0x5561e260e000
+brk(0x5561e262f000)                     = 0x5561e262f000
+brk(0x5561e2650000)                     = 0x5561e2650000
+mremap(0x7ffce5f3c000, 135168, 266240, MREMAP_MAYMOVE) = 0x7ffce55bf000
+brk(0x5561e2671000)                     = 0x5561e2671000
+brk(0x5561e2692000)                     = 0x5561e2692000
+brk(0x5561e26b3000)                     = 0x5561e26b3000
+brk(0x5561e26d4000)                     = 0x5561e26d4000
+brk(0x5561e26f5000)                     = 0x5561e26f5000
+brk(0x5561e2716000)                     = 0x5561e2716000
+brk(0x5561e2737000)                     = 0x5561e2737000
+brk(0x5561e2758000)                     = 0x5561e2758000
+brk(0x5561e277a000)                     = 0x5561e277a000
+brk(0x5561e279b000)                     = 0x5561e279b000
+brk(0x5561e27bc000)                     = 0x5561e27bc000
+brk(0x5561e27df000)                     = 0x5561e27df000
+brk(0x5561e2800000)                     = 0x5561e2800000
+brk(0x5561e2821000)                     = 0x5561e2821000
+brk(0x5561e2843000)                     = 0x5561e2843000
+brk(0x5561e2866000)                     = 0x5561e2866000
+brk(0x5561e2887000)                     = 0x5561e2887000
+brk(0x5561e28aa000)                     = 0x5561e28aa000
+brk(0x5561e28cb000)                     = 0x5561e28cb000
+brk(0x5561e28ec000)                     = 0x5561e28ec000
+brk(0x5561e290f000)                     = 0x5561e290f000
+brk(0x5561e2930000)                     = 0x5561e2930000
+brk(0x5561e2951000)                     = 0x5561e2951000
+brk(0x5561e2973000)                     = 0x5561e2973000
+munmap(0x7ffce5600000, 9531392)         = 0
+brk(0x5561e2994000)                     = 0x5561e2994000
+brk(0x5561e29b5000)                     = 0x5561e29b5000
+brk(0x5561e29d6000)                     = 0x5561e29d6000
+brk(0x5561e29f7000)                     = 0x5561e29f7000
+brk(0x5561e2a18000)                     = 0x5561e2a18000
+brk(0x5561e2a39000)                     = 0x5561e2a39000
+brk(0x5561e2a5a000)                     = 0x5561e2a5a000
+brk(0x5561e2a7b000)                     = 0x5561e2a7b000
+brk(0x5561e2a9c000)                     = 0x5561e2a9c000
+brk(0x5561e2abd000)                     = 0x5561e2abd000
+brk(0x5561e2ade000)                     = 0x5561e2ade000
+brk(0x5561e2aff000)                     = 0x5561e2aff000
+brk(0x5561e2b20000)                     = 0x5561e2b20000
+brk(0x5561e2b41000)                     = 0x5561e2b41000
+brk(0x5561e2b62000)                     = 0x5561e2b62000
+brk(0x5561e2b83000)                     = 0x5561e2b83000
+brk(0x5561e2ba4000)                     = 0x5561e2ba4000
+brk(0x5561e2bc5000)                     = 0x5561e2bc5000
+brk(0x5561e2be6000)                     = 0x5561e2be6000
+brk(0x5561e2c07000)                     = 0x5561e2c07000
+brk(0x5561e2c28000)                     = 0x5561e2c28000
+brk(0x5561e2dd0000)                     = 0x5561e2dd0000
+brk(0x5561e2df1000)                     = 0x5561e2df1000
+brk(0x5561e2e12000)                     = 0x5561e2e12000
+brk(0x5561e2e33000)                     = 0x5561e2e33000
+brk(0x5561e2e54000)                     = 0x5561e2e54000
+brk(0x5561e2e75000)                     = 0x5561e2e75000
+brk(0x5561e2e96000)                     = 0x5561e2e96000
+brk(0x5561e2eb7000)                     = 0x5561e2eb7000
+brk(0x5561e2ed8000)                     = 0x5561e2ed8000
+brk(0x5561e2ef9000)                     = 0x5561e2ef9000
+brk(0x5561e308e000)                     = 0x5561e308e000
+brk(0x5561e30b1000)                     = 0x5561e30b1000
+brk(0x5561e30d4000)                     = 0x5561e30d4000
+brk(0x5561e30f9000)                     = 0x5561e30f9000
+brk(0x5561e311a000)                     = 0x5561e311a000
+brk(0x5561e313b000)                     = 0x5561e313b000
+brk(0x5561e3160000)                     = 0x5561e3160000
+brk(0x5561e3186000)                     = 0x5561e3186000
+brk(0x5561e31ac000)                     = 0x5561e31ac000
+brk(0x5561e31cf000)                     = 0x5561e31cf000
+brk(0x5561e31f5000)                     = 0x5561e31f5000
+brk(0x5561e3223000)                     = 0x5561e3223000
+brk(0x5561e324f000)                     = 0x5561e324f000
+brk(0x5561e328c000)                     = 0x5561e328c000
+brk(0x5561e32c4000)                     = 0x5561e32c4000
+brk(0x5561e333d000)                     = 0x5561e333d000
+brk(0x5561e342f000)                     = 0x5561e342f000
+brk(0x5561e350f000)                     = 0x5561e350f000
+brk(0x5561e36f3000)                     = 0x5561e36f3000
+brk(0x5561e3abb000)                     = 0x5561e3abb000
+brk(0x5561e424b000)                     = 0x5561e424b000
+brk(0x5561e433d000)                     = 0x5561e433d000
+brk(0x5561e43b6000)                     = 0x5561e43b6000
+munmap(0x7ffce55bf000, 266240)          = 0
+write(1, "Block validation completed succe"..., 108) = 108
+sigaltstack({ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=8192}, NULL) = 0
+munmap(0x7ffce6181000, 12288)           = 0
 exit_group(0)                           = ?
 +++ exited with 0 +++

@@ -8,8 +8,6 @@ use std::io::Read;
 use std::path::Path;
 use std::sync::Arc;
 
-
-
 fn main() {
     println!("Starting stateless block validation");
     let input = obtain_input();
