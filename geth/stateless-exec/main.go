@@ -3,19 +3,21 @@ package main
 import (
 	"encoding/json"
 	"fmt"
-	"io/ioutil"
+	"io"
 	"os"
 
+	"github.com/ethereum/go-ethereum/common/hexutil"
 	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/core/vm"
 	"github.com/ethereum/go-ethereum/core/stateless"
 	"github.com/ethereum/go-ethereum/core/types"
+	"github.com/ethereum/go-ethereum/core/vm"
 	"github.com/ethereum/go-ethereum/params"
+	"github.com/ethereum/go-ethereum/rlp"
 )
-
 
 type StatelessInputRaw struct {
 	Block   *types.Block      `json:"block"`
+	Witness *hexutil.Bytes `json:"witness"`
 }
 
 // StatelessInput represents the input data for stateless block execution
@@ -55,7 +57,7 @@ func obtainInput() *StatelessInput {
 	defer file.Close()
 
 	// Read the file content
-	jsonContent, err := ioutil.ReadAll(file)
+	jsonContent, err := io.ReadAll(file)
 	if err != nil {
 		panic(fmt.Sprintf("Failed to read file content from %s: %v", path, err))
 	}
@@ -65,10 +67,19 @@ func obtainInput() *StatelessInput {
 	if err := json.Unmarshal(jsonContent, &input); err != nil {
 		panic(fmt.Sprintf("Failed to parse %s as StatelessInput: %v", path, err))
 	}
-	
+
 	var inputOut StatelessInput
 	inputOut.Block = input.Block
-	inputOut.Witness = new(stateless.Witness)
+	witness := new(stateless.Witness)
+	err = rlp.DecodeBytes(*input.Witness, witness)
+	
+	if err != nil {
+		panic(fmt.Sprintf("Failed to decode witness data: %v", err))
+	}
+	
+	fmt.Println(witness)
+	
+	inputOut.Witness = witness
 	return &inputOut
 }
 
