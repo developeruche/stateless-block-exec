@@ -1,0 +1,1 @@
+./bins/bin_file t8n --input.alloc=/Users/gregg/Documents/work/ethereum/stateless-block-exec/geth/assets/alloc.json --input.txs=/Users/gregg/Documents/work/ethereum/stateless-block-exec/geth/assets/tx.json --input.env=/Users/gregg/Documents/work/ethereum/stateless-block-exec/geth/assets/env.json --state.fork=Prague
