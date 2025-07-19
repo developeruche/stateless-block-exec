@@ -1,0 +1,2673 @@
+execve("./geth_evm_riscv64_linux", ["./geth_evm_riscv64_linux", "t8n", "--input.alloc=./assets/alloc.jso"..., "--input.txs=./assets/tx.json", "--input.env=./assets/env.json", "--state.fork=Prague"], 0x7ffffbf91e30 /* 27 vars */) = 0
+1526  sched_getaffinity(0, 8192, [0 1 2 3]) = 8
+1526  openat(AT_FDCWD, "/sys/kernel/mm/transparent_hugepage/hpage_pmd_size", O_RDONLY) = 3
+1526  read(3, "2097152\n", 20)          = 8
+1526  close(3)                          = 0
+1526  mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ff4324c5000
+1526  mmap(NULL, 131072, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ff4324a5000
+1526  mmap(NULL, 1048576, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ff4323a5000
+1526  mmap(NULL, 8388608, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ff431a00000
+1526  mmap(NULL, 67108864, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ff42da00000
+1526  mmap(NULL, 536870912, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ff40da00000
+1526  mmap(NULL, 536870912, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ff3eda00000
+1526  mmap(0xc000000000, 67108864, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xc000000000
+1526  mmap(NULL, 33554432, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ff3eba00000
+1526  madvise(0x7ff3eba00000, 33554432, MADV_NOHUGEPAGE) = 0
+1526  mmap(NULL, 68624, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ff432394000
+1526  mmap(0xc000000000, 4194304, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xc000000000
+1526  mmap(0x7ff4324a5000, 131072, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7ff4324a5000
+1526  mmap(0x7ff4323a5000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7ff4323a5000
+1526  mmap(0x7ff431a06000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7ff431a06000
+1526  mmap(0x7ff42da30000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7ff42da30000
+1526  mmap(0x7ff40db80000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7ff40db80000
+1526  mmap(0x7ff3edb80000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7ff3edb80000
+1526  mmap(NULL, 1048576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ff432294000
+1526  madvise(0x7ff432294000, 1048576, MADV_NOHUGEPAGE) = 0
+1526  mmap(NULL, 65536, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ff432284000
+1526  mmap(NULL, 65536, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ff432274000
+1526  rt_sigprocmask(SIG_SETMASK, NULL, [], 8) = 0
+1526  fcntl(0, F_GETFD)                 = 0
+1526  fcntl(1, F_GETFD)                 = 0
+1526  fcntl(2, F_GETFD)                 = 0
+1526  sigaltstack(NULL, {ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=0}) = 0
+1526  sigaltstack({ss_sp=0xc000002000, ss_flags=0, ss_size=32768}, NULL) = 0
+1526  rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+1526  gettid()                          = 1526
+1526  rt_sigaction(SIGHUP, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1526  rt_sigaction(SIGHUP, {sa_handler=0x8e430, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+1526  rt_sigaction(SIGINT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1526  rt_sigaction(SIGINT, {sa_handler=0x8e430, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+1526  rt_sigaction(SIGQUIT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1526  rt_sigaction(SIGQUIT, {sa_handler=0x8e430, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+1526  rt_sigaction(SIGILL, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1526  rt_sigaction(SIGILL, {sa_handler=0x8e430, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+1526  rt_sigaction(SIGTRAP, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1526  rt_sigaction(SIGTRAP, {sa_handler=0x8e430, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+1526  rt_sigaction(SIGABRT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1526  rt_sigaction(SIGABRT, {sa_handler=0x8e430, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+1526  rt_sigaction(SIGBUS, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1526  rt_sigaction(SIGBUS, {sa_handler=0x8e430, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+1526  rt_sigaction(SIGFPE, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1526  rt_sigaction(SIGFPE, {sa_handler=0x8e430, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+1526  rt_sigaction(SIGUSR1, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1526  rt_sigaction(SIGUSR1, {sa_handler=0x8e430, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+1526  rt_sigaction(SIGSEGV, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1526  rt_sigaction(SIGSEGV, {sa_handler=0x8e430, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+1526  rt_sigaction(SIGUSR2, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1526  rt_sigaction(SIGUSR2, {sa_handler=0x8e430, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+1526  rt_sigaction(SIGPIPE, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1526  rt_sigaction(SIGPIPE, {sa_handler=0x8e430, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+1526  rt_sigaction(SIGALRM, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1526  rt_sigaction(SIGALRM, {sa_handler=0x8e430, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+1526  rt_sigaction(SIGTERM, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1526  rt_sigaction(SIGTERM, {sa_handler=0x8e430, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+1526  rt_sigaction(SIGSTKFLT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1526  rt_sigaction(SIGSTKFLT, {sa_handler=0x8e430, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+1526  rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1526  rt_sigaction(SIGCHLD, {sa_handler=0x8e430, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+1526  rt_sigaction(SIGURG, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1526  rt_sigaction(SIGURG, {sa_handler=0x8e430, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+1526  rt_sigaction(SIGXCPU, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1526  rt_sigaction(SIGXCPU, {sa_handler=0x8e430, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+1526  rt_sigaction(SIGXFSZ, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1526  rt_sigaction(SIGXFSZ, {sa_handler=0x8e430, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+1526  rt_sigaction(SIGVTALRM, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1526  rt_sigaction(SIGVTALRM, {sa_handler=0x8e430, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+1526  rt_sigaction(SIGPROF, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1526  rt_sigaction(SIGPROF, {sa_handler=0x8e430, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+1526  rt_sigaction(SIGWINCH, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1526  rt_sigaction(SIGWINCH, {sa_handler=0x8e430, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+1526  rt_sigaction(SIGIO, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1526  rt_sigaction(SIGIO, {sa_handler=0x8e430, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+1526  rt_sigaction(SIGPWR, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1526  rt_sigaction(SIGPWR, {sa_handler=0x8e430, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+1526  rt_sigaction(SIGSYS, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1526  rt_sigaction(SIGSYS, {sa_handler=0x8e430, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+1526  rt_sigaction(SIGRTMIN, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1526  rt_sigaction(SIGRT_1, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1526  rt_sigaction(SIGRT_1, {sa_handler=0x8e430, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+1526  rt_sigaction(SIGRT_2, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1526  rt_sigaction(SIGRT_3, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1526  rt_sigaction(SIGRT_3, {sa_handler=0x8e430, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+1526  rt_sigaction(SIGRT_4, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1526  rt_sigaction(SIGRT_4, {sa_handler=0x8e430, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+1526  rt_sigaction(SIGRT_5, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1526  rt_sigaction(SIGRT_5, {sa_handler=0x8e430, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+1526  rt_sigaction(SIGRT_6, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1526  rt_sigaction(SIGRT_6, {sa_handler=0x8e430, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+1526  rt_sigaction(SIGRT_7, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1526  rt_sigaction(SIGRT_7, {sa_handler=0x8e430, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+1526  rt_sigaction(SIGRT_8, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1526  rt_sigaction(SIGRT_8, {sa_handler=0x8e430, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+1526  rt_sigaction(SIGRT_9, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1526  rt_sigaction(SIGRT_9, {sa_handler=0x8e430, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+1526  rt_sigaction(SIGRT_10, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1526  rt_sigaction(SIGRT_10, {sa_handler=0x8e430, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+1526  rt_sigaction(SIGRT_11, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1526  rt_sigaction(SIGRT_11, {sa_handler=0x8e430, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+1526  rt_sigaction(SIGRT_12, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1526  rt_sigaction(SIGRT_12, {sa_handler=0x8e430, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+1526  rt_sigaction(SIGRT_13, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1526  rt_sigaction(SIGRT_13, {sa_handler=0x8e430, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+1526  rt_sigaction(SIGRT_14, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1526  rt_sigaction(SIGRT_14, {sa_handler=0x8e430, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+1526  rt_sigaction(SIGRT_15, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1526  rt_sigaction(SIGRT_15, {sa_handler=0x8e430, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+1526  rt_sigaction(SIGRT_16, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1526  rt_sigaction(SIGRT_16, {sa_handler=0x8e430, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+1526  rt_sigaction(SIGRT_17, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1526  rt_sigaction(SIGRT_17, {sa_handler=0x8e430, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+1526  rt_sigaction(SIGRT_18, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1526  rt_sigaction(SIGRT_18, {sa_handler=0x8e430, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+1526  rt_sigaction(SIGRT_19, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1526  rt_sigaction(SIGRT_19, {sa_handler=0x8e430, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+1526  rt_sigaction(SIGRT_20, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1526  rt_sigaction(SIGRT_20, {sa_handler=0x8e430, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+1526  rt_sigaction(SIGRT_21, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1526  rt_sigaction(SIGRT_21, {sa_handler=0x8e430, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+1526  rt_sigaction(SIGRT_22, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1526  rt_sigaction(SIGRT_22, {sa_handler=0x8e430, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+1526  rt_sigaction(SIGRT_23, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1526  rt_sigaction(SIGRT_23, {sa_handler=0x8e430, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+1526  rt_sigaction(SIGRT_24, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1526  rt_sigaction(SIGRT_24, {sa_handler=0x8e430, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+1526  rt_sigaction(SIGRT_25, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1526  rt_sigaction(SIGRT_25, {sa_handler=0x8e430, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+1526  rt_sigaction(SIGRT_26, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1526  rt_sigaction(SIGRT_26, {sa_handler=0x8e430, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+1526  rt_sigaction(SIGRT_27, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1526  rt_sigaction(SIGRT_27, {sa_handler=0x8e430, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+1526  rt_sigaction(SIGRT_28, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1526  rt_sigaction(SIGRT_28, {sa_handler=0x8e430, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+1526  rt_sigaction(SIGRT_29, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1526  rt_sigaction(SIGRT_29, {sa_handler=0x8e430, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+1526  rt_sigaction(SIGRT_30, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1526  rt_sigaction(SIGRT_30, {sa_handler=0x8e430, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+1526  rt_sigaction(SIGRT_31, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1526  rt_sigaction(SIGRT_31, {sa_handler=0x8e430, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+1526  rt_sigaction(SIGRT_32, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1526  rt_sigaction(SIGRT_32, {sa_handler=0x8e430, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+1526  rt_sigprocmask(SIG_SETMASK, ~[], [], 8) = 0
+1526  clone(child_stack=0xc00004e000, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM) = 1527
+1527  gettid( <unfinished ...>
+1526  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+1527  <... gettid resumed>)             = 1527
+1526  <... rt_sigprocmask resumed>NULL, 8) = 0
+1527  sigaltstack(NULL, {ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=0}) = 0
+1527  sigaltstack({ss_sp=0xc000070000, ss_flags=0, ss_size=32768}, NULL) = 0
+1527  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+1526  rt_sigprocmask(SIG_SETMASK, ~[],  <unfinished ...>
+1527  <... rt_sigprocmask resumed>NULL, 8) = 0
+1526  <... rt_sigprocmask resumed>[], 8) = 0
+1527  gettid( <unfinished ...>
+1526  clone(child_stack=0xc000088000, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM <unfinished ...>
+1527  <... gettid resumed>)             = 1527
+1527  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1526  <... clone resumed>)              = 1528
+1528  gettid( <unfinished ...>
+1527  <... nanosleep resumed>NULL)      = 0
+1526  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+1528  <... gettid resumed>)             = 1528
+1526  <... rt_sigprocmask resumed>NULL, 8) = 0
+1527  getpid( <unfinished ...>
+1528  sigaltstack(NULL,  <unfinished ...>
+1527  <... getpid resumed>)             = 1526
+1526  mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+1528  <... sigaltstack resumed>{ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=0}) = 0
+1527  tgkill(1526, 1526, SIGURG <unfinished ...>
+1526  <... mmap resumed>)               = 0x7ff432234000
+1528  sigaltstack({ss_sp=0xc000078000, ss_flags=0, ss_size=32768},  <unfinished ...>
+1526  --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=1526, si_uid=1000} ---
+1527  <... tgkill resumed>)             = 0
+1528  <... sigaltstack resumed>NULL)    = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1526  rt_sigreturn({mask=[]} <unfinished ...>
+1528  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+1527  <... nanosleep resumed>NULL)      = 0
+1526  <... rt_sigreturn resumed>)       = 140686789918720
+1528  <... rt_sigprocmask resumed>NULL, 8) = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1526  rt_sigprocmask(SIG_SETMASK, ~[],  <unfinished ...>
+1528  gettid( <unfinished ...>
+1527  <... nanosleep resumed>NULL)      = 0
+1526  <... rt_sigprocmask resumed>[], 8) = 0
+1528  <... gettid resumed>)             = 1528
+1527  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1526  clone(child_stack=0xc000084000, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM <unfinished ...>
+1528  mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+1527  <... nanosleep resumed>NULL)      = 0
+1528  <... mmap resumed>)               = 0x7ff3eb9c0000
+1527  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1526  <... clone resumed>)              = 1529
+1529  gettid( <unfinished ...>
+1526  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+1527  <... nanosleep resumed>NULL)      = 0
+1529  <... gettid resumed>)             = 1529
+1526  <... rt_sigprocmask resumed>NULL, 8) = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1526  futex(0x1ddddc0, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1529  sigaltstack(NULL,  <unfinished ...>
+1528  mmap(NULL, 1439992, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+1527  <... nanosleep resumed>NULL)      = 0
+1529  <... sigaltstack resumed>{ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=0}) = 0
+1528  <... mmap resumed>)               = 0x7ff3eb860000
+1527  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1529  sigaltstack({ss_sp=0xc000088000, ss_flags=0, ss_size=32768},  <unfinished ...>
+1527  <... nanosleep resumed>NULL)      = 0
+1529  <... sigaltstack resumed>NULL)    = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1529  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+1527  <... nanosleep resumed>NULL)      = 0
+1529  <... rt_sigprocmask resumed>NULL, 8) = 0
+1528  rt_sigprocmask(SIG_SETMASK, ~[],  <unfinished ...>
+1527  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1529  gettid( <unfinished ...>
+1528  <... rt_sigprocmask resumed>[], 8) = 0
+1529  <... gettid resumed>)             = 1529
+1527  <... nanosleep resumed>NULL)      = 0
+1529  futex(0xc00006f148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1528  clone(child_stack=0xc000116000, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM <unfinished ...>
+1527  nanosleep({tv_sec=0, tv_nsec=20000}, NULL) = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1530  gettid( <unfinished ...>
+1528  <... clone resumed>)              = 1530
+1530  <... gettid resumed>)             = 1530
+1527  <... nanosleep resumed>NULL)      = 0
+1530  sigaltstack(NULL,  <unfinished ...>
+1528  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+1530  <... sigaltstack resumed>{ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=0}) = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1530  sigaltstack({ss_sp=0xc000104000, ss_flags=0, ss_size=32768},  <unfinished ...>
+1528  <... rt_sigprocmask resumed>NULL, 8) = 0
+1530  <... sigaltstack resumed>NULL)    = 0
+1527  <... nanosleep resumed>NULL)      = 0
+1530  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+1528  futex(0x1ddddc0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1530  <... rt_sigprocmask resumed>NULL, 8) = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1526  <... futex resumed>)              = 0
+1530  gettid( <unfinished ...>
+1528  <... futex resumed>)              = 1
+1530  <... gettid resumed>)             = 1530
+1528  futex(0xc00006e948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1527  <... nanosleep resumed>NULL)      = 0
+1530  futex(0xc000100148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1527  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1526  futex(0xc000100148, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1527  <... nanosleep resumed>NULL)      = 0
+1526  <... futex resumed>)              = 1
+1530  <... futex resumed>)              = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1530  futex(0xc00006e948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1527  <... nanosleep resumed>NULL)      = 0
+1530  <... futex resumed>)              = 1
+1526  futex(0xc00006f148, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1528  <... futex resumed>)              = 0
+1530  futex(0x1ddddc0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1527  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1526  <... futex resumed>)              = 1
+1530  <... futex resumed>)              = 0
+1529  <... futex resumed>)              = 0
+1528  rt_sigprocmask(SIG_SETMASK, ~[],  <unfinished ...>
+1526  futex(0x1ddddc0, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1530  sched_yield( <unfinished ...>
+1529  futex(0xc00006f148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1527  <... nanosleep resumed>NULL)      = 0
+1530  <... sched_yield resumed>)        = 0
+1528  <... rt_sigprocmask resumed>[], 8) = 0
+1530  futex(0x1de9138, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1527  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1530  <... futex resumed>)              = 0
+1528  clone(child_stack=0xc000112000, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM <unfinished ...>
+1530  futex(0xc000100148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1527  <... nanosleep resumed>NULL)      = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1531  gettid( <unfinished ...>
+1528  <... clone resumed>)              = 1531
+1531  <... gettid resumed>)             = 1531
+1527  <... nanosleep resumed>NULL)      = 0
+1531  sigaltstack(NULL,  <unfinished ...>
+1528  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+1527  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1531  <... sigaltstack resumed>{ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=0}) = 0
+1528  <... rt_sigprocmask resumed>NULL, 8) = 0
+1531  sigaltstack({ss_sp=0xc000092000, ss_flags=0, ss_size=32768},  <unfinished ...>
+1527  <... nanosleep resumed>NULL)      = 0
+1531  <... sigaltstack resumed>NULL)    = 0
+1528  futex(0x1ddddc0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1527  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1531  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+1526  <... futex resumed>)              = 0
+1528  <... futex resumed>)              = 1
+1531  <... rt_sigprocmask resumed>NULL, 8) = 0
+1527  <... nanosleep resumed>NULL)      = 0
+1531  gettid( <unfinished ...>
+1528  futex(0xc00006e948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1531  <... gettid resumed>)             = 1531
+1527  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1531  futex(0xc00006f948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1527  <... nanosleep resumed>NULL)      = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000}, NULL) = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000}, NULL) = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000}, NULL) = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000}, NULL) = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000}, NULL) = 0
+1527  getpid( <unfinished ...>
+1526  futex(0xc00006f948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1527  <... getpid resumed>)             = 1526
+1526  <... futex resumed>)              = 1
+1531  <... futex resumed>)              = 0
+1527  tgkill(1526, 1526, SIGURG <unfinished ...>
+1526  futex(0xc00006e948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1531  futex(0xc000100148, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1527  <... tgkill resumed>)             = 0
+1526  <... futex resumed>)              = 1
+1528  <... futex resumed>)              = 0
+1531  <... futex resumed>)              = 1
+1527  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1526  --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=1526, si_uid=1000} ---
+1531  futex(0x1ddddc0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1530  <... futex resumed>)              = 0
+1528  futex(0xc00006e948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1526  rt_sigreturn({mask=[]} <unfinished ...>
+1531  <... futex resumed>)              = 0
+1530  futex(0xc000100148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1527  <... nanosleep resumed>NULL)      = 0
+1526  <... rt_sigreturn resumed>)       = 1
+1531  futex(0xc00006f948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1527  nanosleep({tv_sec=0, tv_nsec=20000}, NULL) = 0
+1526  mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+1527  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1526  <... mmap resumed>)               = 0x7ff3eb820000
+1527  <... nanosleep resumed>NULL)      = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000}, NULL) = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000}, NULL) = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000}, NULL) = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000}, NULL) = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000}, NULL) = 0
+1527  getpid()                          = 1526
+1526  futex(0xc00006f948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1527  tgkill(1526, 1526, SIGURG <unfinished ...>
+1526  <... futex resumed>)              = 1
+1531  <... futex resumed>)              = 0
+1527  <... tgkill resumed>)             = 0
+1526  --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=1526, si_uid=1000} ---
+1531  futex(0xc000100148, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1527  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1526  rt_sigreturn({mask=[]} <unfinished ...>
+1531  <... futex resumed>)              = 1
+1530  <... futex resumed>)              = 0
+1526  <... rt_sigreturn resumed>)       = 1
+1531  futex(0x1ddddc0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1527  <... nanosleep resumed>NULL)      = 0
+1531  <... futex resumed>)              = 0
+1530  futex(0xc000100148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1531  futex(0xc00006f948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1527  nanosleep({tv_sec=0, tv_nsec=20000}, NULL) = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000}, NULL) = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000}, NULL) = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000}, NULL) = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000}, NULL) = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1526  prlimit64(0, RLIMIT_NOFILE, NULL,  <unfinished ...>
+1527  <... nanosleep resumed>NULL)      = 0
+1526  <... prlimit64 resumed>{rlim_cur=1024, rlim_max=1024*1024}) = 0
+1527  getpid( <unfinished ...>
+1526  futex(0xc00006f948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1527  <... getpid resumed>)             = 1526
+1526  <... futex resumed>)              = 1
+1527  tgkill(1526, 1526, SIGURG <unfinished ...>
+1526  futex(0xc000100148, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1531  <... futex resumed>)              = 0
+1527  <... tgkill resumed>)             = 0
+1526  <... futex resumed>)              = 1
+1531  futex(0xc00006e948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1530  <... futex resumed>)              = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1526  --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=1526, si_uid=1000} ---
+1531  <... futex resumed>)              = 1
+1530  futex(0xc000100148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1528  <... futex resumed>)              = 0
+1526  rt_sigreturn({mask=[]} <unfinished ...>
+1531  futex(0x1ddddc0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1527  <... nanosleep resumed>NULL)      = 0
+1526  <... rt_sigreturn resumed>)       = 1
+1531  <... futex resumed>)              = 0
+1528  futex(0xc00006e948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1526  prlimit64(0, RLIMIT_NOFILE, {rlim_cur=1048575, rlim_max=1024*1024},  <unfinished ...>
+1531  futex(0xc00006f948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1527  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1526  <... prlimit64 resumed>NULL)      = 0
+1527  <... nanosleep resumed>NULL)      = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000}, NULL) = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1526  fcntl(0, F_GETFL <unfinished ...>
+1527  <... nanosleep resumed>NULL)      = 0
+1526  <... fcntl resumed>)              = 0x8402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+1527  nanosleep({tv_sec=0, tv_nsec=20000}, NULL) = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1526  futex(0xc00006f948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1527  <... nanosleep resumed>NULL)      = 0
+1526  <... futex resumed>)              = 1
+1527  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1526  fcntl(1, F_GETFL <unfinished ...>
+1531  <... futex resumed>)              = 0
+1526  <... fcntl resumed>)              = 0x8402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+1527  <... nanosleep resumed>NULL)      = 0
+1526  fcntl(2, F_GETFL <unfinished ...>
+1531  nanosleep({tv_sec=0, tv_nsec=3000},  <unfinished ...>
+1526  <... fcntl resumed>)              = 0x8402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+1527  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1531  <... nanosleep resumed>NULL)      = 0
+1531  futex(0xc00006e948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1527  <... nanosleep resumed>NULL)      = 0
+1526  futex(0xc000100148, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1531  <... futex resumed>)              = 1
+1528  <... futex resumed>)              = 0
+1527  getpid( <unfinished ...>
+1526  <... futex resumed>)              = 1
+1531  futex(0x1ddddc0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1530  <... futex resumed>)              = 0
+1528  futex(0xc00006e948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1527  <... getpid resumed>)             = 1526
+1531  <... futex resumed>)              = 0
+1530  futex(0xc000100148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1527  tgkill(1526, 1526, SIGURG <unfinished ...>
+1531  futex(0xc00006f948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1526  --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=1526, si_uid=1000} ---
+1527  <... tgkill resumed>)             = 0
+1526  rt_sigreturn({mask=[]} <unfinished ...>
+1527  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1526  <... rt_sigreturn resumed>)       = 824635485168
+1527  <... nanosleep resumed>NULL)      = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000}, NULL) = 0
+1527  nanosleep({tv_sec=0, tv_nsec=40000}, NULL) = 0
+1527  nanosleep({tv_sec=0, tv_nsec=80000}, NULL) = 0
+1527  nanosleep({tv_sec=0, tv_nsec=160000},  <unfinished ...>
+1526  readlinkat(AT_FDCWD, "/proc/self/exe",  <unfinished ...>
+1527  <... nanosleep resumed>NULL)      = 0
+1527  futex(0xc00006f948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1526  <... readlinkat resumed>"/home/ubuntu/stateless-exec/geth"..., 128) = 50
+1527  <... futex resumed>)              = 1
+1531  <... futex resumed>)              = 0
+1526  openat(AT_FDCWD, "/home/ubuntu/stateless-exec/geth_evm_riscv64_linux", O_RDONLY|O_CLOEXEC <unfinished ...>
+1527  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1531  futex(0xc00006f948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1526  <... openat resumed>)             = 3
+1526  fcntl(3, F_GETFL <unfinished ...>
+1527  <... nanosleep resumed>NULL)      = 0
+1526  <... fcntl resumed>)              = 0x8000 (flags O_RDONLY|O_LARGEFILE)
+1527  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1526  fcntl(3, F_SETFL, O_RDONLY|O_NONBLOCK|O_LARGEFILE) = 0
+1527  <... nanosleep resumed>NULL)      = 0
+1526  epoll_create1(EPOLL_CLOEXEC <unfinished ...>
+1527  getpid( <unfinished ...>
+1526  <... epoll_create1 resumed>)      = 4
+1527  <... getpid resumed>)             = 1526
+1526  eventfd2(0, EFD_CLOEXEC|EFD_NONBLOCK <unfinished ...>
+1527  tgkill(1526, 1526, SIGURG <unfinished ...>
+1526  <... eventfd2 resumed>)           = 5
+1527  <... tgkill resumed>)             = 0
+1526  --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=1526, si_uid=1000} ---
+1527  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1526  rt_sigreturn({mask=[]})           = 5
+1527  <... nanosleep resumed>NULL)      = 0
+1526  epoll_ctl(4, EPOLL_CTL_ADD, 5, {events=EPOLLIN, data={u32=31487880, u64=31487880}} <unfinished ...>
+1527  getpid( <unfinished ...>
+1526  <... epoll_ctl resumed>)          = 0
+1527  <... getpid resumed>)             = 1526
+1526  futex(0xc00006f948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1527  tgkill(1526, 1526, SIGURG <unfinished ...>
+1526  <... futex resumed>)              = 1
+1531  <... futex resumed>)              = 0
+1527  <... tgkill resumed>)             = 0
+1526  --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=1526, si_uid=1000} ---
+1531  futex(0xc000100148, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1527  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1526  rt_sigreturn({mask=[]} <unfinished ...>
+1531  <... futex resumed>)              = 1
+1530  <... futex resumed>)              = 0
+1527  <... nanosleep resumed>NULL)      = 0
+1526  <... rt_sigreturn resumed>)       = 1
+1531  futex(0x1ddddc0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1530  futex(0xc000100148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1526  epoll_ctl(4, EPOLL_CTL_ADD, 3, {events=EPOLLIN|EPOLLOUT|EPOLLRDHUP|EPOLLET, data={u32=2190391297, u64=36015514875508737}} <unfinished ...>
+1531  <... futex resumed>)              = 0
+1527  epoll_pwait(4,  <unfinished ...>
+1526  <... epoll_ctl resumed>)          = -1 EPERM (Operation not permitted)
+1531  futex(0xc00006f948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1526  fcntl(3, F_GETFL <unfinished ...>
+1527  <... epoll_pwait resumed>[], 128, 0, NULL, 0) = 0
+1526  <... fcntl resumed>)              = 0x8800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE)
+1527  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1526  fcntl(3, F_SETFL, O_RDONLY|O_LARGEFILE) = 0
+1527  <... nanosleep resumed>NULL)      = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1526  fstat(3,  <unfinished ...>
+1527  <... nanosleep resumed>NULL)      = 0
+1526  <... fstat resumed>{st_mode=S_IFREG|0775, st_size=44878232, ...}) = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1526  pread64(3,  <unfinished ...>
+1527  <... nanosleep resumed>NULL)      = 0
+1526  <... pread64 resumed>"\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\2\0\363\0\1\0\0\0 \340\10\0\0\0\0\0"..., 64, 0) = 64
+1527  epoll_pwait(4,  <unfinished ...>
+1526  pread64(3,  <unfinished ...>
+1527  <... epoll_pwait resumed>[], 128, 0, NULL, 0) = 0
+1526  <... pread64 resumed>"\200\223\2\260\1#4U\0\2272\232\0\223\202r\311#0U\0\227\222\326\0\223\202\2\354\0033\201"..., 64, 5609779) = 64
+1527  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1526  pread64(3, "\370\0\3\271\10\0\3\0\t\0\23\t\211\1\223\2312\0003\t9\1/)\t\24\223\31\t\2\223\331"..., 64, 11219558) = 64
+1527  <... nanosleep resumed>NULL)      = 0
+1526  pread64(3,  <unfinished ...>
+1527  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1526  <... pread64 resumed>"kquMETicUaQ57+Wxo2EifT7+Ft6774Lq"..., 64, 16829337) = 64
+1526  pread64(3,  <unfinished ...>
+1527  <... nanosleep resumed>NULL)      = 0
+1526  <... pread64 resumed>"ubw\0crypto/internal/fips140/aes."..., 64, 22439116) = 64
+1527  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1526  pread64(3, "\0\0\0\0\7\0\0\0\0+\n\0\0\0\0\0\0\257\2\0\0P[\0\0\340\22\0\0\377\377\377"..., 64, 28048895) = 64
+1527  <... nanosleep resumed>NULL)      = 0
+1526  pread64(3,  <unfinished ...>
+1527  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1526  <... pread64 resumed>"Q\272h\237\341\342\327\241|sT9\342\277\274\334\320\233BO\356S\324\364:B\37\322^y\240\326"..., 64, 33658674) = 64
+1526  pread64(3,  <unfinished ...>
+1527  <... nanosleep resumed>NULL)      = 0
+1526  <... pread64 resumed>"RC\320T\5\303\227=[6D\341\t0\314\341x\267\310\222\20%GG\30\255uBs]R\330"..., 64, 39268453) = 64
+1527  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1526  close(3)                          = 0
+1527  <... nanosleep resumed>NULL)      = 0
+1526  futex(0xc00006f948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1527  getpid( <unfinished ...>
+1526  <... futex resumed>)              = 1
+1531  <... futex resumed>)              = 0
+1527  <... getpid resumed>)             = 1526
+1526  futex(0xc000100148, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1531  futex(0xc00006e948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1527  tgkill(1526, 1526, SIGURG <unfinished ...>
+1526  <... futex resumed>)              = 1
+1530  <... futex resumed>)              = 0
+1526  --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=1526, si_uid=1000} ---
+1531  <... futex resumed>)              = 1
+1528  <... futex resumed>)              = 0
+1527  <... tgkill resumed>)             = 0
+1526  rt_sigreturn({mask=[]} <unfinished ...>
+1531  futex(0x1ddddc0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1530  futex(0xc000100148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1528  futex(0xc00006e948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1526  <... rt_sigreturn resumed>)       = 1
+1531  <... futex resumed>)              = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1531  futex(0xc00006f948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1527  <... nanosleep resumed>NULL)      = 0
+1527  epoll_pwait(4, [], 128, 0, NULL, 0) = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000}, NULL) = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000}, NULL) = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000}, NULL) = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000}, NULL) = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000}, NULL) = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000}, NULL) = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000}, NULL) = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000}, NULL) = 0
+1527  epoll_pwait(4, [], 128, 0, NULL, 0) = 0
+1527  getpid()                          = 1526
+1527  tgkill(1526, 1526, SIGURG)        = 0
+1526  --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=1526, si_uid=1000} ---
+1527  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1526  rt_sigreturn({mask=[]} <unfinished ...>
+1527  <... nanosleep resumed>NULL)      = 0
+1526  <... rt_sigreturn resumed>)       = 1
+1527  getpid()                          = 1526
+1527  tgkill(1526, 1526, SIGURG)        = 0
+1526  --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=1526, si_uid=1000} ---
+1527  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1526  rt_sigreturn({mask=[]})           = 5
+1527  <... nanosleep resumed>NULL)      = 0
+1527  getpid()                          = 1526
+1527  tgkill(1526, 1526, SIGURG <unfinished ...>
+1526  futex(0xc00006f948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1527  <... tgkill resumed>)             = 0
+1526  <... futex resumed>)              = 1
+1527  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1526  --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=1526, si_uid=1000} ---
+1531  <... futex resumed>)              = 0
+1527  <... nanosleep resumed>NULL)      = 0
+1526  rt_sigreturn({mask=[]} <unfinished ...>
+1531  futex(0xc00006e948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1527  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1526  <... rt_sigreturn resumed>)       = 1
+1531  <... futex resumed>)              = 1
+1528  <... futex resumed>)              = 0
+1526  futex(0x1ddddc0, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1527  <... nanosleep resumed>NULL)      = 0
+1531  futex(0x1ddddc0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1526  <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+1528  futex(0xc00006e948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1531  <... futex resumed>)              = 0
+1527  epoll_pwait(4,  <unfinished ...>
+1531  futex(0xc00006f948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1527  <... epoll_pwait resumed>[], 128, 0, NULL, 0) = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000}, NULL) = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000}, NULL) = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000}, NULL) = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000}, NULL) = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000}, NULL) = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000}, NULL) = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000}, NULL) = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000}, NULL) = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000}, NULL) = 0
+1527  epoll_pwait(4, [], 128, 0, NULL, 0) = 0
+1527  getpid()                          = 1526
+1527  tgkill(1526, 1526, SIGURG <unfinished ...>
+1526  futex(0xc00006f948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1527  <... tgkill resumed>)             = 0
+1526  <... futex resumed>)              = 1
+1531  <... futex resumed>)              = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1526  --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=1526, si_uid=1000} ---
+1531  futex(0xc00006e948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1527  <... nanosleep resumed>NULL)      = 0
+1526  rt_sigreturn({mask=[]} <unfinished ...>
+1531  <... futex resumed>)              = 1
+1528  <... futex resumed>)              = 0
+1526  <... rt_sigreturn resumed>)       = 1
+1527  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1531  futex(0x1ddddc0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1528  futex(0xc00006e948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1531  <... futex resumed>)              = 0
+1527  <... nanosleep resumed>NULL)      = 0
+1531  futex(0xc00006f948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1527  nanosleep({tv_sec=0, tv_nsec=20000}, NULL) = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000}, NULL) = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000}, NULL) = 0
+1527  epoll_pwait(4, [], 128, 0, NULL, 0) = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000}, NULL) = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000}, NULL) = 0
+1526  openat(AT_FDCWD, "/proc/self/auxv", O_RDONLY|O_CLOEXEC <unfinished ...>
+1527  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1526  <... openat resumed>)             = 3
+1527  <... nanosleep resumed>NULL)      = 0
+1526  fcntl(3, F_GETFL <unfinished ...>
+1527  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1526  <... fcntl resumed>)              = 0x8000 (flags O_RDONLY|O_LARGEFILE)
+1526  fcntl(3, F_SETFL, O_RDONLY|O_NONBLOCK|O_LARGEFILE <unfinished ...>
+1527  <... nanosleep resumed>NULL)      = 0
+1526  <... fcntl resumed>)              = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1526  epoll_ctl(4, EPOLL_CTL_ADD, 3, {events=EPOLLIN|EPOLLOUT|EPOLLRDHUP|EPOLLET, data={u32=2190391298, u64=36015514875508738}}) = -1 EPERM (Operation not permitted)
+1527  <... nanosleep resumed>NULL)      = 0
+1526  fcntl(3, F_GETFL <unfinished ...>
+1527  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1526  <... fcntl resumed>)              = 0x8800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE)
+1527  <... nanosleep resumed>NULL)      = 0
+1526  fcntl(3, F_SETFL, O_RDONLY|O_LARGEFILE <unfinished ...>
+1527  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1526  <... fcntl resumed>)              = 0
+1526  fstat(3,  <unfinished ...>
+1527  <... nanosleep resumed>NULL)      = 0
+1526  <... fstat resumed>{st_mode=S_IFREG|0400, st_size=0, ...}) = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1526  read(3,  <unfinished ...>
+1527  <... nanosleep resumed>NULL)      = 0
+1526  <... read resumed>"!\0\0\0\0\0\0\0\0pP2\364\177\0\0(\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 512) = 464
+1527  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1526  read(3,  <unfinished ...>
+1527  <... nanosleep resumed>NULL)      = 0
+1526  <... read resumed>"", 48)         = 0
+1527  epoll_pwait(4,  <unfinished ...>
+1526  close(3 <unfinished ...>
+1527  <... epoll_pwait resumed>[], 128, 0, NULL, 0) = 0
+1526  <... close resumed>)              = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1526  syscall_0x102(0xc0000cddf8, 0x2, 0, 0, 0, 0 <unfinished ...>
+1527  <... nanosleep resumed>NULL)      = 0
+1526  <... syscall_0x102 resumed>)      = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000}, NULL) = 0
+1526  futex(0xc00006f948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1527  getpid( <unfinished ...>
+1526  <... futex resumed>)              = 1
+1527  <... getpid resumed>)             = 1526
+1526  futex(0xc00006e948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1531  <... futex resumed>)              = 0
+1527  tgkill(1526, 1526, SIGURG <unfinished ...>
+1526  <... futex resumed>)              = 1
+1531  futex(0xc000100148, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1528  <... futex resumed>)              = 0
+1527  <... tgkill resumed>)             = 0
+1526  --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=1526, si_uid=1000} ---
+1531  <... futex resumed>)              = 1
+1530  <... futex resumed>)              = 0
+1528  futex(0xc00006e948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1526  rt_sigreturn({mask=[]} <unfinished ...>
+1531  futex(0x1ddddc0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1530  futex(0xc000100148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1527  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1526  <... rt_sigreturn resumed>)       = 1
+1531  <... futex resumed>)              = 0
+1531  futex(0xc00006f948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1527  <... nanosleep resumed>NULL)      = 0
+1527  nanosleep({tv_sec=0, tv_nsec=40000}, NULL) = 0
+1527  nanosleep({tv_sec=0, tv_nsec=80000}, NULL) = 0
+1527  epoll_pwait(4, [], 128, 0, NULL, 0) = 0
+1527  nanosleep({tv_sec=0, tv_nsec=160000}, NULL) = 0
+1527  nanosleep({tv_sec=0, tv_nsec=320000}, NULL) = 0
+1527  nanosleep({tv_sec=0, tv_nsec=640000}, NULL) = 0
+1527  nanosleep({tv_sec=0, tv_nsec=1280000}, NULL) = 0
+1526  futex(0xc00006f948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1527  getpid( <unfinished ...>
+1526  <... futex resumed>)              = 1
+1527  <... getpid resumed>)             = 1526
+1531  <... futex resumed>)              = 0
+1526  futex(0xc000100148, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1527  tgkill(1526, 1526, SIGURG <unfinished ...>
+1526  <... futex resumed>)              = 1
+1531  futex(0xc00006e948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1530  <... futex resumed>)              = 0
+1526  --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=1526, si_uid=1000} ---
+1527  <... tgkill resumed>)             = 0
+1531  <... futex resumed>)              = 1
+1530  futex(0xc000100148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1528  <... futex resumed>)              = 0
+1526  rt_sigreturn({mask=[]} <unfinished ...>
+1531  futex(0x1ddddc0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1528  futex(0xc00006e948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1527  nanosleep({tv_sec=0, tv_nsec=2560000},  <unfinished ...>
+1526  <... rt_sigreturn resumed>)       = 1
+1531  <... futex resumed>)              = 0
+1531  futex(0xc00006f948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1527  <... nanosleep resumed>NULL)      = 0
+1527  epoll_pwait(4, [], 128, 0, NULL, 0) = 0
+1527  nanosleep({tv_sec=0, tv_nsec=5120000}, NULL) = 0
+1527  nanosleep({tv_sec=0, tv_nsec=10000000}, NULL) = 0
+1527  epoll_pwait(4, [], 128, 0, NULL, 0) = 0
+1526  futex(0xc00006f948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1527  getpid( <unfinished ...>
+1526  <... futex resumed>)              = 1
+1531  <... futex resumed>)              = 0
+1527  <... getpid resumed>)             = 1526
+1526  futex(0xc00006e948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1531  futex(0xc000100148, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1527  tgkill(1526, 1526, SIGURG <unfinished ...>
+1526  <... futex resumed>)              = 1
+1528  <... futex resumed>)              = 0
+1531  <... futex resumed>)              = 1
+1526  --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=1526, si_uid=1000} ---
+1530  <... futex resumed>)              = 0
+1528  futex(0xc00006e948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1527  <... tgkill resumed>)             = 0
+1526  rt_sigreturn({mask=[]} <unfinished ...>
+1531  futex(0x1ddddc0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1530  futex(0xc000100148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1526  <... rt_sigreturn resumed>)       = 1
+1531  <... futex resumed>)              = 0
+1527  nanosleep({tv_sec=0, tv_nsec=10000000},  <unfinished ...>
+1531  futex(0xc00006f948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1527  <... nanosleep resumed>NULL)      = 0
+1527  epoll_pwait(4, [], 128, 0, NULL, 0) = 0
+1527  nanosleep({tv_sec=0, tv_nsec=10000000},  <unfinished ...>
+1526  openat(AT_FDCWD, "/proc/stat", O_RDONLY|O_CLOEXEC) = 3
+1526  fcntl(3, F_GETFL)                 = 0x8000 (flags O_RDONLY|O_LARGEFILE)
+1527  <... nanosleep resumed>NULL)      = 0
+1526  fcntl(3, F_SETFL, O_RDONLY|O_NONBLOCK|O_LARGEFILE <unfinished ...>
+1527  epoll_pwait(4,  <unfinished ...>
+1526  <... fcntl resumed>)              = 0
+1527  <... epoll_pwait resumed>[], 128, 0, NULL, 0) = 0
+1526  epoll_ctl(4, EPOLL_CTL_ADD, 3, {events=EPOLLIN|EPOLLOUT|EPOLLRDHUP|EPOLLET, data={u32=2190391299, u64=36015514875508739}} <unfinished ...>
+1527  getpid( <unfinished ...>
+1526  <... epoll_ctl resumed>)          = 0
+1527  <... getpid resumed>)             = 1526
+1526  futex(0xc00006f948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1527  tgkill(1526, 1526, SIGURG <unfinished ...>
+1526  <... futex resumed>)              = 1
+1527  <... tgkill resumed>)             = 0
+1526  --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=1526, si_uid=1000} ---
+1531  <... futex resumed>)              = 0
+1527  nanosleep({tv_sec=0, tv_nsec=10000000},  <unfinished ...>
+1526  rt_sigreturn({mask=[]} <unfinished ...>
+1531  futex(0xc000100148, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1526  <... rt_sigreturn resumed>)       = 1
+1526  futex(0x1ddddc0, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1531  <... futex resumed>)              = 1
+1530  <... futex resumed>)              = 0
+1531  futex(0x1ddddc0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1530  futex(0xc000100148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1526  <... futex resumed>)              = 0
+1531  <... futex resumed>)              = 1
+1526  read(3,  <unfinished ...>
+1531  futex(0xc00006f948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1526  <... read resumed>"cpu  25831 2652 27079 1828110 17"..., 4096) = 496
+1526  epoll_ctl(4, EPOLL_CTL_DEL, 3, 0xc0003bfa68) = 0
+1526  close(3)                          = 0
+1526  openat(AT_FDCWD, "/proc/stat", O_RDONLY|O_CLOEXEC) = 3
+1526  fcntl(3, F_GETFL)                 = 0x8000 (flags O_RDONLY|O_LARGEFILE)
+1526  fcntl(3, F_SETFL, O_RDONLY|O_NONBLOCK|O_LARGEFILE) = 0
+1526  epoll_ctl(4, EPOLL_CTL_ADD, 3, {events=EPOLLIN|EPOLLOUT|EPOLLRDHUP|EPOLLET, data={u32=2190391300, u64=36015514875508740}}) = 0
+1526  read(3, "cpu  25831 2652 27079 1828112 17"..., 4096) = 496
+1527  <... nanosleep resumed>NULL)      = 0
+1526  read(3, "", 4096)                 = 0
+1527  epoll_pwait(4,  <unfinished ...>
+1526  epoll_ctl(4, EPOLL_CTL_DEL, 3, 0xc0003bfa68 <unfinished ...>
+1527  <... epoll_pwait resumed>[{events=EPOLLIN|EPOLLOUT, data={u32=2190391300, u64=36015514875508740}}], 128, 0, NULL, 0) = 1
+1526  <... epoll_ctl resumed>)          = 0
+1527  nanosleep({tv_sec=0, tv_nsec=10000000},  <unfinished ...>
+1526  close(3)                          = 0
+1527  <... nanosleep resumed>NULL)      = 0
+1527  epoll_pwait(4, [], 128, 0, NULL, 0) = 0
+1526  futex(0xc00006f948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1527  getpid( <unfinished ...>
+1526  <... futex resumed>)              = 1
+1527  <... getpid resumed>)             = 1526
+1526  futex(0xc000100148, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1531  <... futex resumed>)              = 0
+1527  tgkill(1526, 1526, SIGURG <unfinished ...>
+1526  <... futex resumed>)              = 1
+1531  futex(0xc00006e948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1530  <... futex resumed>)              = 0
+1527  <... tgkill resumed>)             = 0
+1526  --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=1526, si_uid=1000} ---
+1531  <... futex resumed>)              = 1
+1530  futex(0xc000100148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1528  <... futex resumed>)              = 0
+1527  nanosleep({tv_sec=0, tv_nsec=10000000},  <unfinished ...>
+1526  rt_sigreturn({mask=[]} <unfinished ...>
+1531  futex(0x1ddddc0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1528  futex(0xc00006e948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1526  <... rt_sigreturn resumed>)       = 1
+1531  <... futex resumed>)              = 0
+1531  futex(0xc00006f948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1526  ioctl(0, TCGETS <unfinished ...>
+1527  <... nanosleep resumed>NULL)      = 0
+1526  <... ioctl resumed>, {c_iflag=ICRNL|IXON|IXOFF|IUTF8, c_oflag=NL0|CR0|TAB0|BS0|VT0|FF0|OPOST|ONLCR, c_cflag=B9600|CS8|CREAD|HUPCL|CLOCAL, c_lflag=ISIG|ICANON|ECHO|ECHOE|ECHOK|ECHOCTL|ECHOKE, ...}) = 0
+1527  epoll_pwait(4, [], 128, 0, NULL, 0) = 0
+1527  nanosleep({tv_sec=0, tv_nsec=10000000},  <unfinished ...>
+1526  ioctl(0, TCGETS, {c_iflag=ICRNL|IXON|IXOFF|IUTF8, c_oflag=NL0|CR0|TAB0|BS0|VT0|FF0|OPOST|ONLCR, c_cflag=B9600|CS8|CREAD|HUPCL|CLOCAL, c_lflag=ISIG|ICANON|ECHO|ECHOE|ECHOK|ECHOCTL|ECHOKE, ...}) = 0
+1526  ioctl(1, TCGETS, {c_iflag=ICRNL|IXON|IXOFF|IUTF8, c_oflag=NL0|CR0|TAB0|BS0|VT0|FF0|OPOST|ONLCR, c_cflag=B9600|CS8|CREAD|HUPCL|CLOCAL, c_lflag=ISIG|ICANON|ECHO|ECHOE|ECHOK|ECHOCTL|ECHOKE, ...}) = 0
+1526  ioctl(0, TCSETS, {c_iflag=IXOFF|IUTF8, c_oflag=NL0|CR0|TAB0|BS0|VT0|FF0|OPOST|ONLCR, c_cflag=B9600|CS8|CREAD|HUPCL|CLOCAL, c_lflag=ISIG|ECHOE|ECHOK|ECHOCTL|ECHOKE, ...}) = 0
+1526  futex(0xc00006f948, FUTEX_WAKE_PRIVATE, 1) = 1
+1531  <... futex resumed>)              = 0
+1526  futex(0xc00006e948, FUTEX_WAKE_PRIVATE, 1) = 1
+1531  futex(0xc000100148, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1526  futex(0x1ddddc0, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1528  <... futex resumed>)              = 0
+1531  <... futex resumed>)              = 1
+1530  <... futex resumed>)              = 0
+1528  futex(0xc00006e948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1530  futex(0xc000100148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1531  rt_sigprocmask(SIG_SETMASK, ~[], [], 8) = 0
+1531  clone(child_stack=0xc000344000, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM <unfinished ...>
+1527  <... nanosleep resumed>NULL)      = 0
+1527  epoll_pwait(4, [], 128, 0, NULL, 0) = 0
+1527  nanosleep({tv_sec=0, tv_nsec=10000000},  <unfinished ...>
+1532  gettid( <unfinished ...>
+1531  <... clone resumed>)              = 1532
+1532  <... gettid resumed>)             = 1532
+1531  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+1532  sigaltstack(NULL,  <unfinished ...>
+1531  <... rt_sigprocmask resumed>NULL, 8) = 0
+1532  <... sigaltstack resumed>{ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=0}) = 0
+1532  sigaltstack({ss_sp=0xc000332000, ss_flags=0, ss_size=32768},  <unfinished ...>
+1531  rt_sigprocmask(SIG_SETMASK, ~[HUP INT QUIT ILL TRAP ABRT BUS FPE SEGV TERM STKFLT CHLD URG PROF SYS RTMIN RT_1 RT_2],  <unfinished ...>
+1532  <... sigaltstack resumed>NULL)    = 0
+1531  <... rt_sigprocmask resumed>NULL, 8) = 0
+1532  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+1531  futex(0xc000100148, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1532  <... rt_sigprocmask resumed>NULL, 8) = 0
+1531  <... futex resumed>)              = 1
+1530  <... futex resumed>)              = 0
+1532  gettid( <unfinished ...>
+1531  rt_sigprocmask(SIG_SETMASK, ~[HUP INT QUIT ILL TRAP ABRT BUS FPE SEGV TERM STKFLT CHLD URG PROF WINCH SYS RTMIN RT_1 RT_2],  <unfinished ...>
+1532  <... gettid resumed>)             = 1532
+1530  nanosleep({tv_sec=0, tv_nsec=3000},  <unfinished ...>
+1532  futex(0x1e08618, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1531  <... rt_sigprocmask resumed>NULL, 8) = 0
+1530  <... nanosleep resumed>NULL)      = 0
+1531  futex(0xc00006e948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1530  futex(0xc00006f148, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1531  <... futex resumed>)              = 1
+1528  <... futex resumed>)              = 0
+1531  futex(0xc00006f948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1530  <... futex resumed>)              = 1
+1529  <... futex resumed>)              = 0
+1528  futex(0xc00006e948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1530  futex(0x1ddddc0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1529  futex(0xc00006f148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1530  <... futex resumed>)              = 1
+1526  <... futex resumed>)              = 0
+1530  futex(0xc000100148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1526  futex(0xc000100148, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1530  <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+1526  <... futex resumed>)              = 0
+1530  nanosleep({tv_sec=0, tv_nsec=3000},  <unfinished ...>
+1526  ioctl(1, TIOCGWINSZ <unfinished ...>
+1530  <... nanosleep resumed>NULL)      = 0
+1526  <... ioctl resumed>, {ws_row=24, ws_col=80, ws_xpixel=0, ws_ypixel=0}) = 0
+1530  futex(0xc00006f148, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1526  ioctl(0, TCGETS <unfinished ...>
+1530  <... futex resumed>)              = 1
+1529  <... futex resumed>)              = 0
+1526  <... ioctl resumed>, {c_iflag=IXOFF|IUTF8, c_oflag=NL0|CR0|TAB0|BS0|VT0|FF0|OPOST|ONLCR, c_cflag=B9600|CS8|CREAD|HUPCL|CLOCAL, c_lflag=ISIG|ECHOE|ECHOK|ECHOCTL|ECHOKE, ...}) = 0
+1530  futex(0xc00006f948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1527  <... nanosleep resumed>NULL)      = 0
+1526  ioctl(0, TCSETS, {c_iflag=ICRNL|IXON|IXOFF|IUTF8, c_oflag=NL0|CR0|TAB0|BS0|VT0|FF0|OPOST|ONLCR, c_cflag=B9600|CS8|CREAD|HUPCL|CLOCAL, c_lflag=ISIG|ICANON|ECHO|ECHOE|ECHOK|ECHOCTL|ECHOKE, ...} <unfinished ...>
+1529  futex(0xc00006e948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1530  <... futex resumed>)              = 1
+1526  <... ioctl resumed>)              = 0
+1531  <... futex resumed>)              = 0
+1529  <... futex resumed>)              = 1
+1527  epoll_pwait(4,  <unfinished ...>
+1531  sched_yield( <unfinished ...>
+1530  futex(0xc000100148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1529  futex(0x1e08900, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1528  <... futex resumed>)              = 0
+1527  <... epoll_pwait resumed>[], 128, 0, NULL, 0) = 0
+1531  <... sched_yield resumed>)        = 0
+1528  futex(0xc00006e948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1531  futex(0x1de9138, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1527  nanosleep({tv_sec=0, tv_nsec=10000000},  <unfinished ...>
+1531  <... futex resumed>)              = 0
+1531  futex(0xc00006f948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1527  <... nanosleep resumed>NULL)      = 0
+1527  epoll_pwait(4, [], 128, 0, NULL, 0) = 0
+1526  futex(0xc00006e948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1527  getpid( <unfinished ...>
+1526  <... futex resumed>)              = 1
+1527  <... getpid resumed>)             = 1526
+1526  futex(0xc000100148, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1528  <... futex resumed>)              = 0
+1527  tgkill(1526, 1526, SIGURG <unfinished ...>
+1526  <... futex resumed>)              = 1
+1530  <... futex resumed>)              = 0
+1527  <... tgkill resumed>)             = 0
+1526  --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=1526, si_uid=1000} ---
+1530  sched_yield( <unfinished ...>
+1527  nanosleep({tv_sec=0, tv_nsec=10000000},  <unfinished ...>
+1526  rt_sigreturn({mask=[]} <unfinished ...>
+1530  <... sched_yield resumed>)        = 0
+1528  rt_sigprocmask(SIG_SETMASK, ~[],  <unfinished ...>
+1526  <... rt_sigreturn resumed>)       = 1
+1530  futex(0x1de9138, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1526  futex(0x1ddddc0, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1528  <... rt_sigprocmask resumed>[], 8) = 0
+1530  <... futex resumed>)              = 0
+1530  futex(0xc000100148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1528  clone(child_stack=0xc000340000, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM <unfinished ...>
+1533  gettid( <unfinished ...>
+1528  <... clone resumed>)              = 1533
+1533  <... gettid resumed>)             = 1533
+1528  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+1533  sigaltstack(NULL, {ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=0}) = 0
+1528  <... rt_sigprocmask resumed>NULL, 8) = 0
+1533  sigaltstack({ss_sp=0xc0002d8000, ss_flags=0, ss_size=32768},  <unfinished ...>
+1528  futex(0x1ddddc0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1533  <... sigaltstack resumed>NULL)    = 0
+1526  <... futex resumed>)              = 0
+1528  <... futex resumed>)              = 1
+1533  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+1528  futex(0xc00006e948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1533  <... rt_sigprocmask resumed>NULL, 8) = 0
+1533  gettid()                          = 1533
+1533  futex(0xc0002d4148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1527  <... nanosleep resumed>NULL)      = 0
+1527  epoll_pwait(4, [], 128, 0, NULL, 0) = 0
+1527  nanosleep({tv_sec=0, tv_nsec=10000000},  <unfinished ...>
+1526  ioctl(1, TCGETS, {c_iflag=ICRNL|IXON|IXOFF|IUTF8, c_oflag=NL0|CR0|TAB0|BS0|VT0|FF0|OPOST|ONLCR, c_cflag=B9600|CS8|CREAD|HUPCL|CLOCAL, c_lflag=ISIG|ICANON|ECHO|ECHOE|ECHOK|ECHOCTL|ECHOKE, ...}) = 0
+1527  <... nanosleep resumed>NULL)      = 0
+1527  epoll_pwait(4, [], 128, 0, NULL, 0) = 0
+1526  futex(0xc0002d4148, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1527  getpid( <unfinished ...>
+1526  <... futex resumed>)              = 1
+1527  <... getpid resumed>)             = 1526
+1533  <... futex resumed>)              = 0
+1526  futex(0xc00006e948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1527  tgkill(1526, 1526, SIGURG <unfinished ...>
+1533  futex(0xc000100148, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1526  <... futex resumed>)              = 1
+1528  <... futex resumed>)              = 0
+1533  <... futex resumed>)              = 1
+1527  <... tgkill resumed>)             = 0
+1526  --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=1526, si_uid=1000} ---
+1530  <... futex resumed>)              = 0
+1533  futex(0x1ddddc0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1528  futex(0xc00006e948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1527  nanosleep({tv_sec=0, tv_nsec=10000000},  <unfinished ...>
+1526  rt_sigreturn({mask=[]} <unfinished ...>
+1533  <... futex resumed>)              = 0
+1530  futex(0xc000100148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1526  <... rt_sigreturn resumed>)       = 1
+1533  futex(0xc0002d4148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1526  mmap(0xc000400000, 4194304, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xc000400000
+1526  mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ff3eb7e0000
+1527  <... nanosleep resumed>NULL)      = 0
+1527  epoll_pwait(4, [], 128, 0, NULL, 0) = 0
+1527  nanosleep({tv_sec=0, tv_nsec=10000000},  <unfinished ...>
+1526  futex(0xc0002d4148, FUTEX_WAKE_PRIVATE, 1) = 1
+1533  <... futex resumed>)              = 0
+1533  nanosleep({tv_sec=0, tv_nsec=3000}, NULL) = 0
+1533  futex(0xc000100148, FUTEX_WAKE_PRIVATE, 1) = 1
+1530  <... futex resumed>)              = 0
+1527  <... nanosleep resumed>NULL)      = 0
+1533  futex(0xc0002d4148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1530  futex(0xc000100148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1527  epoll_pwait(4, [], 128, 0, NULL, 0) = 0
+1526  futex(0xc000100148, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1527  getpid( <unfinished ...>
+1526  <... futex resumed>)              = 1
+1527  <... getpid resumed>)             = 1526
+1530  <... futex resumed>)              = 0
+1526  futex(0xc0002d4148, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1527  tgkill(1526, 1526, SIGURG <unfinished ...>
+1530  futex(0xc00006e948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1526  <... futex resumed>)              = 1
+1533  <... futex resumed>)              = 0
+1527  <... tgkill resumed>)             = 0
+1526  --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=1526, si_uid=1000} ---
+1530  <... futex resumed>)              = 1
+1528  <... futex resumed>)              = 0
+1533  futex(0xc0002d4148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1526  rt_sigreturn({mask=[]} <unfinished ...>
+1530  futex(0x1ddddc0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1527  nanosleep({tv_sec=0, tv_nsec=10000000},  <unfinished ...>
+1528  futex(0xc00006e948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1526  <... rt_sigreturn resumed>)       = 1
+1530  <... futex resumed>)              = 0
+1530  futex(0xc000100148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1527  <... nanosleep resumed>NULL)      = 0
+1527  epoll_pwait(4, [], 128, 0, NULL, 0) = 0
+1527  nanosleep({tv_sec=0, tv_nsec=10000000}, NULL) = 0
+1527  epoll_pwait(4, [], 128, 0, NULL, 0) = 0
+1527  getpid( <unfinished ...>
+1526  futex(0xc000100148, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1527  <... getpid resumed>)             = 1526
+1526  <... futex resumed>)              = 1
+1527  tgkill(1526, 1526, SIGURG <unfinished ...>
+1530  <... futex resumed>)              = 0
+1526  futex(0xc00006e948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1527  <... tgkill resumed>)             = 0
+1530  futex(0xc0002d4148, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1526  <... futex resumed>)              = 1
+1528  <... futex resumed>)              = 0
+1527  nanosleep({tv_sec=0, tv_nsec=10000000},  <unfinished ...>
+1526  --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=1526, si_uid=1000} ---
+1533  <... futex resumed>)              = 0
+1530  <... futex resumed>)              = 1
+1528  futex(0xc00006e948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1526  rt_sigreturn({mask=[]} <unfinished ...>
+1533  futex(0xc0002d4148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1530  futex(0x1ddddc0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1526  <... rt_sigreturn resumed>)       = 1
+1530  <... futex resumed>)              = 0
+1530  futex(0xc000100148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1527  <... nanosleep resumed>NULL)      = 0
+1526  futex(0xc000100148, FUTEX_WAKE_PRIVATE, 1) = 1
+1527  epoll_pwait(4,  <unfinished ...>
+1530  <... futex resumed>)              = 0
+1526  futex(0xc0002d4148, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1527  <... epoll_pwait resumed>[], 128, 0, NULL, 0) = 0
+1530  futex(0xc00006e948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1526  <... futex resumed>)              = 1
+1527  nanosleep({tv_sec=0, tv_nsec=10000000},  <unfinished ...>
+1533  <... futex resumed>)              = 0
+1526  futex(0x1ddddc0, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1530  <... futex resumed>)              = 1
+1528  <... futex resumed>)              = 0
+1533  futex(0xc0002d4148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1530  futex(0x1ddddc0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1528  futex(0xc00006e948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1526  <... futex resumed>)              = 0
+1530  <... futex resumed>)              = 1
+1526  futex(0xc00006e948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1530  futex(0xc000100148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1526  <... futex resumed>)              = 1
+1528  <... futex resumed>)              = 0
+1526  futex(0xc000100148, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1528  futex(0xc0002d4148, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1526  <... futex resumed>)              = 1
+1530  <... futex resumed>)              = 0
+1528  <... futex resumed>)              = 1
+1526  futex(0x1ddddc0, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1533  <... futex resumed>)              = 0
+1530  futex(0xc000100148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1526  <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+1533  futex(0xc0002d4148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1528  futex(0x1ddddc0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1526  futex(0xc0002d4148, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1533  <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+1526  <... futex resumed>)              = 0
+1528  <... futex resumed>)              = 0
+1533  nanosleep({tv_sec=0, tv_nsec=3000},  <unfinished ...>
+1526  futex(0xc000100148, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1528  futex(0xc00006e948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1526  <... futex resumed>)              = 1
+1533  <... nanosleep resumed>NULL)      = 0
+1530  <... futex resumed>)              = 0
+1526  futex(0x1ddddc0, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1533  futex(0xc00006e948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1530  futex(0xc000100148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1533  <... futex resumed>)              = 1
+1528  <... futex resumed>)              = 0
+1533  futex(0x1ddddc0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1528  futex(0xc00006e948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1533  <... futex resumed>)              = 1
+1526  <... futex resumed>)              = 0
+1533  futex(0xc0002d4148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1526  futex(0xc0002d4148, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1533  <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+1526  <... futex resumed>)              = 0
+1526  futex(0xc00006e948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1533  nanosleep({tv_sec=0, tv_nsec=3000},  <unfinished ...>
+1526  <... futex resumed>)              = 1
+1528  <... futex resumed>)              = 0
+1526  futex(0x1ddddc0, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1533  <... nanosleep resumed>NULL)      = 0
+1526  <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+1528  futex(0x1ddddc0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1533  futex(0xc0002d4148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1528  <... futex resumed>)              = 0
+1526  epoll_pwait(4,  <unfinished ...>
+1528  futex(0xc00006e948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1526  <... epoll_pwait resumed>[], 128, 0, NULL, 0) = 0
+1527  <... nanosleep resumed>NULL)      = 0
+1526  futex(0xc00006e948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1527  epoll_pwait(4,  <unfinished ...>
+1526  <... futex resumed>)              = 1
+1527  <... epoll_pwait resumed>[], 128, 0, NULL, 0) = 0
+1528  <... futex resumed>)              = 0
+1528  futex(0xc0002d4148, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1527  nanosleep({tv_sec=0, tv_nsec=10000000},  <unfinished ...>
+1533  <... futex resumed>)              = 0
+1528  <... futex resumed>)              = 1
+1533  futex(0xc000100148, FUTEX_WAKE_PRIVATE, 1) = 1
+1530  <... futex resumed>)              = 0
+1533  nanosleep({tv_sec=0, tv_nsec=3000},  <unfinished ...>
+1530  nanosleep({tv_sec=0, tv_nsec=3000},  <unfinished ...>
+1528  getpid( <unfinished ...>
+1526  rt_sigprocmask(SIG_SETMASK, ~[],  <unfinished ...>
+1533  <... nanosleep resumed>NULL)      = 0
+1530  <... nanosleep resumed>NULL)      = 0
+1528  <... getpid resumed>)             = 1526
+1526  <... rt_sigprocmask resumed>[], 8) = 0
+1528  tgkill(1526, 1526, SIGURG <unfinished ...>
+1526  clone(child_stack=0xc000554000, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM <unfinished ...>
+1528  <... tgkill resumed>)             = 0
+1533  futex(0xc0002d4148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1530  futex(0xc000100148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1526  <... clone resumed>)              = 1534
+1534  gettid( <unfinished ...>
+1526  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+1534  <... gettid resumed>)             = 1534
+1526  <... rt_sigprocmask resumed>NULL, 8) = 0
+1528  futex(0xc0002d4148, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1534  sigaltstack(NULL,  <unfinished ...>
+1526  --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=1526, si_uid=1000} ---
+1534  <... sigaltstack resumed>{ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=0}) = 0
+1526  rt_sigreturn({mask=[]} <unfinished ...>
+1533  <... futex resumed>)              = 0
+1528  <... futex resumed>)              = 1
+1526  <... rt_sigreturn resumed>)       = 0
+1534  sigaltstack({ss_sp=0xc000544000, ss_flags=0, ss_size=32768},  <unfinished ...>
+1526  futex(0x1ddddc0, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1533  nanosleep({tv_sec=0, tv_nsec=3000},  <unfinished ...>
+1534  <... sigaltstack resumed>NULL)    = 0
+1534  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+1533  <... nanosleep resumed>NULL)      = 0
+1534  <... rt_sigprocmask resumed>NULL, 8) = 0
+1528  futex(0x1de9238, FUTEX_WAIT_PRIVATE, 0, {tv_sec=0, tv_nsec=100000} <unfinished ...>
+1527  <... nanosleep resumed>NULL)      = 0
+1534  gettid( <unfinished ...>
+1533  futex(0xc000100148, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1527  epoll_pwait(4,  <unfinished ...>
+1534  <... gettid resumed>)             = 1534
+1533  <... futex resumed>)              = 1
+1528  <... futex resumed>)              = -1 ETIMEDOUT (Connection timed out)
+1527  <... epoll_pwait resumed>[], 128, 0, NULL, 0) = 0
+1533  futex(0x1ddddc0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1530  <... futex resumed>)              = 0
+1528  getpid( <unfinished ...>
+1533  <... futex resumed>)              = 1
+1527  nanosleep({tv_sec=0, tv_nsec=10000000},  <unfinished ...>
+1526  <... futex resumed>)              = 0
+1528  <... getpid resumed>)             = 1526
+1533  futex(0xc0002d4148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1534  futex(0xc000101948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1528  tgkill(1526, 1534, SIGURG <unfinished ...>
+1526  mmap(NULL, 65536, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+1530  futex(0xc000100148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1534  <... futex resumed>)              = ? ERESTARTSYS (To be restarted if SA_RESTART is set)
+1528  <... tgkill resumed>)             = 0
+1526  <... mmap resumed>)               = 0x7ff432224000
+1534  --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=1526, si_uid=1000} ---
+1528  getpid( <unfinished ...>
+1534  rt_sigreturn({mask=[]} <unfinished ...>
+1528  <... getpid resumed>)             = 1526
+1526  futex(0xc000100148, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1534  <... rt_sigreturn resumed>)       = 824634775880
+1528  tgkill(1526, 1526, SIGURG <unfinished ...>
+1534  futex(0xc000101948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1526  <... futex resumed>)              = 1
+1528  <... tgkill resumed>)             = 0
+1530  <... futex resumed>)              = 0
+1526  --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=1526, si_uid=1000} ---
+1528  futex(0x1de9238, FUTEX_WAIT_PRIVATE, 0, {tv_sec=0, tv_nsec=100000} <unfinished ...>
+1526  rt_sigreturn({mask=[]} <unfinished ...>
+1530  futex(0xc000101948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1526  <... rt_sigreturn resumed>)       = 1
+1534  <... futex resumed>)              = 0
+1530  <... futex resumed>)              = 1
+1528  <... futex resumed>)              = -1 ETIMEDOUT (Connection timed out)
+1526  futex(0x1de9238, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1534  sched_yield( <unfinished ...>
+1530  sched_yield( <unfinished ...>
+1526  <... futex resumed>)              = 0
+1528  sched_yield( <unfinished ...>
+1534  <... sched_yield resumed>)        = 0
+1530  <... sched_yield resumed>)        = 0
+1526  futex(0x1ddddc0, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1528  <... sched_yield resumed>)        = 0
+1534  futex(0x1de9138, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1530  futex(0x1de9138, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1528  futex(0x1de9138, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1534  <... futex resumed>)              = 0
+1530  <... futex resumed>)              = 0
+1534  futex(0xc000101948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1528  <... futex resumed>)              = 0
+1530  futex(0x1ddddc0, FUTEX_WAKE_PRIVATE, 1) = 1
+1528  futex(0x1de9238, FUTEX_WAIT_PRIVATE, 0, {tv_sec=0, tv_nsec=100000} <unfinished ...>
+1526  <... futex resumed>)              = 0
+1530  futex(0xc000100148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1528  <... futex resumed>)              = -1 ETIMEDOUT (Connection timed out)
+1527  <... nanosleep resumed>NULL)      = 0
+1528  getpid( <unfinished ...>
+1526  futex(0xc000100148, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1527  epoll_pwait(4,  <unfinished ...>
+1528  <... getpid resumed>)             = 1526
+1526  <... futex resumed>)              = 1
+1530  <... futex resumed>)              = 0
+1528  tgkill(1526, 1526, SIGURG <unfinished ...>
+1527  <... epoll_pwait resumed>[], 128, 0, NULL, 0) = 0
+1526  futex(0xc000101948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1530  futex(0xc0002d4148, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1528  <... tgkill resumed>)             = 0
+1526  <... futex resumed>)              = 1
+1534  <... futex resumed>)              = 0
+1530  <... futex resumed>)              = 1
+1527  getpid( <unfinished ...>
+1526  --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=1526, si_uid=1000} ---
+1534  futex(0x1de9238, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1533  <... futex resumed>)              = 0
+1530  sched_yield( <unfinished ...>
+1528  futex(0x1de9238, FUTEX_WAIT_PRIVATE, 0, {tv_sec=0, tv_nsec=100000} <unfinished ...>
+1526  rt_sigreturn({mask=[]} <unfinished ...>
+1534  <... futex resumed>)              = 0
+1533  sched_yield( <unfinished ...>
+1530  <... sched_yield resumed>)        = 0
+1527  <... getpid resumed>)             = 1526
+1526  <... rt_sigreturn resumed>)       = 1
+1534  futex(0xc000101948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1533  <... sched_yield resumed>)        = 0
+1530  futex(0x1de9138, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1528  <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+1526  futex(0x1ddddc0, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1533  futex(0x1de9138, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1530  <... futex resumed>)              = 0
+1527  tgkill(1526, 1528, SIGURG <unfinished ...>
+1533  <... futex resumed>)              = 0
+1530  futex(0x1ddddc0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1528  futex(0x1de9238, FUTEX_WAIT_PRIVATE, 0, {tv_sec=0, tv_nsec=100000} <unfinished ...>
+1533  futex(0xc0002d4148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1530  <... futex resumed>)              = 1
+1527  <... tgkill resumed>)             = 0
+1526  <... futex resumed>)              = 0
+1530  futex(0xc000100148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1528  <... futex resumed>)              = ? ERESTART_RESTARTBLOCK (Interrupted by signal)
+1527  nanosleep({tv_sec=0, tv_nsec=10000000},  <unfinished ...>
+1528  --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=1526, si_uid=1000} ---
+1528  rt_sigreturn({mask=[]})           = -1 EINTR (Interrupted system call)
+1526  futex(0xc000100148, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1528  getpid( <unfinished ...>
+1526  <... futex resumed>)              = 1
+1530  <... futex resumed>)              = 0
+1528  <... getpid resumed>)             = 1526
+1526  futex(0xc0002d4148, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1530  futex(0xc000101948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1528  tgkill(1526, 1526, SIGURG <unfinished ...>
+1526  <... futex resumed>)              = 1
+1533  <... futex resumed>)              = 0
+1530  <... futex resumed>)              = 1
+1526  --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=1526, si_uid=1000} ---
+1534  <... futex resumed>)              = 0
+1533  futex(0x1de9238, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1528  <... tgkill resumed>)             = 0
+1526  rt_sigreturn({mask=[]} <unfinished ...>
+1534  sched_yield( <unfinished ...>
+1533  <... futex resumed>)              = 0
+1530  sched_yield( <unfinished ...>
+1526  <... rt_sigreturn resumed>)       = 1
+1534  <... sched_yield resumed>)        = 0
+1533  futex(0xc0002d4148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1528  sched_yield( <unfinished ...>
+1526  futex(0x1ddddc0, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1534  futex(0x1de9138, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1530  <... sched_yield resumed>)        = 0
+1534  <... futex resumed>)              = 0
+1528  <... sched_yield resumed>)        = 0
+1530  futex(0x1de9138, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1534  futex(0xc000101948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1530  <... futex resumed>)              = 0
+1528  futex(0x1de9138, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1530  futex(0x1ddddc0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1528  <... futex resumed>)              = 0
+1526  <... futex resumed>)              = 0
+1530  <... futex resumed>)              = 1
+1528  futex(0x1de9210, FUTEX_WAIT_PRIVATE, 0, {tv_sec=0, tv_nsec=100000} <unfinished ...>
+1530  futex(0xc000100148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1528  <... futex resumed>)              = -1 ETIMEDOUT (Connection timed out)
+1528  getpid( <unfinished ...>
+1526  futex(0xc000100148, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1528  <... getpid resumed>)             = 1526
+1526  <... futex resumed>)              = 1
+1528  tgkill(1526, 1526, SIGURG <unfinished ...>
+1530  <... futex resumed>)              = 0
+1526  futex(0x1ddddc0, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1528  <... tgkill resumed>)             = 0
+1530  futex(0x1de9210, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1526  <... futex resumed>)              = ? ERESTARTSYS (To be restarted if SA_RESTART is set)
+1527  <... nanosleep resumed>NULL)      = 0
+1526  --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=1526, si_uid=1000} ---
+1530  <... futex resumed>)              = 0
+1528  sched_yield( <unfinished ...>
+1527  sched_yield( <unfinished ...>
+1526  rt_sigreturn({mask=[]} <unfinished ...>
+1530  futex(0xc000100148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1528  <... sched_yield resumed>)        = 0
+1526  <... rt_sigreturn resumed>)       = 31317440
+1527  <... sched_yield resumed>)        = 0
+1526  futex(0x1ddddc0, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1528  futex(0x1de9138, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1527  futex(0x1de9138, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1528  <... futex resumed>)              = 0
+1527  <... futex resumed>)              = 0
+1528  epoll_pwait(4,  <unfinished ...>
+1527  futex(0x1de9220, FUTEX_WAIT_PRIVATE, 0, {tv_sec=60, tv_nsec=0} <unfinished ...>
+1528  <... epoll_pwait resumed>[], 128, 0, NULL, 0) = 0
+1528  mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ff3eb7a0000
+1528  mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ff3eb760000
+1528  futex(0x1de9220, FUTEX_WAKE_PRIVATE, 1) = 1
+1527  <... futex resumed>)              = 0
+1528  futex(0xc000100148, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1527  epoll_pwait(4,  <unfinished ...>
+1528  <... futex resumed>)              = 1
+1527  <... epoll_pwait resumed>[], 128, 0, NULL, 0) = 0
+1530  <... futex resumed>)              = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1530  sched_yield( <unfinished ...>
+1527  <... nanosleep resumed>NULL)      = 0
+1530  <... sched_yield resumed>)        = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1530  futex(0x1df0a20, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+1528  futex(0x1df0a20, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1530  <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+1527  <... nanosleep resumed>NULL)      = 0
+1528  <... futex resumed>)              = 0
+1530  futex(0x1df0a20, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1527  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1530  <... futex resumed>)              = 0
+1527  <... nanosleep resumed>NULL)      = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1528  futex(0x1de9238, FUTEX_WAIT_PRIVATE, 0, {tv_sec=0, tv_nsec=100000} <unfinished ...>
+1530  futex(0x1de9238, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1527  <... nanosleep resumed>NULL)      = 0
+1530  <... futex resumed>)              = 0
+1528  <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+1527  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1530  futex(0xc000101948, FUTEX_WAKE_PRIVATE, 1) = 1
+1534  <... futex resumed>)              = 0
+1527  <... nanosleep resumed>NULL)      = 0
+1530  futex(0x1ddddc0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1534  futex(0xc0002d4148, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1527  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1526  <... futex resumed>)              = 0
+1534  <... futex resumed>)              = 1
+1530  <... futex resumed>)              = 1
+1534  futex(0xc000101948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1533  <... futex resumed>)              = 0
+1527  <... nanosleep resumed>NULL)      = 0
+1530  futex(0xc000100148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1528  futex(0xc00006e948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1533  futex(0xc0002d4148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1527  epoll_pwait(4, [], 128, 0, NULL, 0) = 0
+1527  futex(0xc0002d4148, FUTEX_WAKE_PRIVATE, 1) = 1
+1533  <... futex resumed>)              = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1533  futex(0xc0002d4148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1527  <... nanosleep resumed>NULL)      = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000}, NULL) = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000}, NULL) = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000}, NULL) = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000}, NULL) = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000}, NULL) = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000}, NULL) = 0
+1527  epoll_pwait(4, [], 128, 0, NULL, 0) = 0
+1526  futex(0xc0002d4148, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1527  getpid( <unfinished ...>
+1526  <... futex resumed>)              = 1
+1527  <... getpid resumed>)             = 1526
+1533  <... futex resumed>)              = 0
+1526  futex(0xc00006e948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1527  tgkill(1526, 1526, SIGURG <unfinished ...>
+1526  <... futex resumed>)              = 1
+1533  futex(0xc000100148, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1528  <... futex resumed>)              = 0
+1526  --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=1526, si_uid=1000} ---
+1527  <... tgkill resumed>)             = 0
+1533  <... futex resumed>)              = 1
+1530  <... futex resumed>)              = 0
+1528  futex(0xc00006e948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1526  rt_sigreturn({mask=[]} <unfinished ...>
+1533  futex(0x1ddddc0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1527  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1530  futex(0xc000100148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1526  <... rt_sigreturn resumed>)       = 1
+1533  <... futex resumed>)              = 0
+1527  <... nanosleep resumed>NULL)      = 0
+1533  futex(0xc0002d4148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1527  nanosleep({tv_sec=0, tv_nsec=20000}, NULL) = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000}, NULL) = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000}, NULL) = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000}, NULL) = 0
+1527  epoll_pwait(4, [], 128, 0, NULL, 0) = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000}, NULL) = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000}, NULL) = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000}, NULL) = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000}, NULL) = 0
+1526  futex(0xc0002d4148, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1527  getpid( <unfinished ...>
+1526  <... futex resumed>)              = 1
+1533  <... futex resumed>)              = 0
+1527  <... getpid resumed>)             = 1526
+1526  futex(0xc000100148, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1533  futex(0xc00006e948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1527  tgkill(1526, 1526, SIGURG <unfinished ...>
+1526  <... futex resumed>)              = 1
+1533  <... futex resumed>)              = 1
+1530  <... futex resumed>)              = 0
+1528  <... futex resumed>)              = 0
+1526  --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=1526, si_uid=1000} ---
+1533  futex(0x1ddddc0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1527  <... tgkill resumed>)             = 0
+1530  futex(0xc000100148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1528  futex(0xc00006e948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1526  rt_sigreturn({mask=[]} <unfinished ...>
+1533  <... futex resumed>)              = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1526  <... rt_sigreturn resumed>)       = 1
+1533  futex(0xc0002d4148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1527  <... nanosleep resumed>NULL)      = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000}, NULL) = 0
+1527  epoll_pwait(4, [], 128, 0, NULL, 0) = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000}, NULL) = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000}, NULL) = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000}, NULL) = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000}, NULL) = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000}, NULL) = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000}, NULL) = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000}, NULL) = 0
+1527  getpid( <unfinished ...>
+1526  futex(0xc0002d4148, FUTEX_WAKE_PRIVATE, 1) = 1
+1527  <... getpid resumed>)             = 1526
+1526  futex(0xc00006e948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1533  <... futex resumed>)              = 0
+1527  tgkill(1526, 1526, SIGURG <unfinished ...>
+1526  <... futex resumed>)              = 1
+1533  futex(0xc000100148, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1528  <... futex resumed>)              = 0
+1527  <... tgkill resumed>)             = 0
+1526  --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=1526, si_uid=1000} ---
+1533  <... futex resumed>)              = 1
+1530  <... futex resumed>)              = 0
+1528  futex(0xc00006e948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1527  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1526  rt_sigreturn({mask=[]} <unfinished ...>
+1533  futex(0x1ddddc0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1530  futex(0xc000100148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1526  <... rt_sigreturn resumed>)       = 1
+1533  <... futex resumed>)              = 0
+1527  <... nanosleep resumed>NULL)      = 0
+1533  futex(0xc0002d4148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1527  epoll_pwait(4,  <unfinished ...>
+1526  futex(0xc0002d4148, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1527  <... epoll_pwait resumed>[], 128, 0, NULL, 0) = 0
+1526  <... futex resumed>)              = 1
+1533  <... futex resumed>)              = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1526  getrandom( <unfinished ...>
+1533  epoll_pwait(4,  <unfinished ...>
+1526  <... getrandom resumed>"\x43\x2c\xdb\xc5\x9b\xce\x96\xcb", 8, 0) = 8
+1527  <... nanosleep resumed>NULL)      = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000}, NULL) = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000}, NULL) = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000}, NULL) = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000}, NULL) = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000}, NULL) = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000}, NULL) = 0
+1526  futex(0xc000100148, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1527  getpid( <unfinished ...>
+1526  <... futex resumed>)              = 1
+1527  <... getpid resumed>)             = 1526
+1530  <... futex resumed>)              = 0
+1526  futex(0xc00006e948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1527  tgkill(1526, 1526, SIGURG <unfinished ...>
+1526  <... futex resumed>)              = 1
+1530  futex(0xc000101948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1528  <... futex resumed>)              = 0
+1526  --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=1526, si_uid=1000} ---
+1527  <... tgkill resumed>)             = 0
+1530  <... futex resumed>)              = 1
+1526  rt_sigreturn({mask=[]} <unfinished ...>
+1534  <... futex resumed>)              = 0
+1528  futex(0xc00006e948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1527  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1526  <... rt_sigreturn resumed>)       = 1
+1534  futex(0xc000101948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1530  futex(0x1ddddc0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1527  <... nanosleep resumed>NULL)      = 0
+1530  <... futex resumed>)              = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1530  futex(0xc000100148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1527  <... nanosleep resumed>NULL)      = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000}, NULL) = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000}, NULL) = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1526  getpid( <unfinished ...>
+1527  <... nanosleep resumed>NULL)      = 0
+1526  <... getpid resumed>)             = 1526
+1527  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1526  newfstatat(AT_FDCWD, "/proc",  <unfinished ...>
+1527  <... nanosleep resumed>NULL)      = 0
+1526  <... newfstatat resumed>{st_mode=S_IFDIR|0555, st_size=0, ...}, 0) = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000}, NULL) = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1526  futex(0xc000100148, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1527  <... nanosleep resumed>NULL)      = 0
+1526  <... futex resumed>)              = 1
+1530  <... futex resumed>)              = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1526  futex(0xc000101948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1530  futex(0xc00006e948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1527  <... nanosleep resumed>NULL)      = 0
+1526  <... futex resumed>)              = 1
+1534  <... futex resumed>)              = 0
+1530  <... futex resumed>)              = 1
+1526  futex(0x1ddddc0, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1528  <... futex resumed>)              = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1534  futex(0xc000101948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1526  <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+1530  futex(0x1ddddc0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1528  futex(0xc00006e948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1530  <... futex resumed>)              = 0
+1527  <... nanosleep resumed>NULL)      = 0
+1530  futex(0xc000100148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1527  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1526  futex(0xc000100148, FUTEX_WAKE_PRIVATE, 1) = 1
+1530  <... futex resumed>)              = 0
+1527  <... nanosleep resumed>NULL)      = 0
+1526  futex(0xc00006e948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1530  futex(0xc000101948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1527  nanosleep({tv_sec=0, tv_nsec=40000},  <unfinished ...>
+1526  <... futex resumed>)              = 1
+1530  <... futex resumed>)              = 1
+1528  <... futex resumed>)              = 0
+1526  futex(0x1ddddc0, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1534  <... futex resumed>)              = 0
+1527  <... nanosleep resumed>NULL)      = 0
+1526  <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+1534  futex(0xc000101948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1530  futex(0x1ddddc0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1528  futex(0xc00006e948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1526  futex(0xc000101948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1534  <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+1530  <... futex resumed>)              = 0
+1527  nanosleep({tv_sec=0, tv_nsec=80000},  <unfinished ...>
+1526  <... futex resumed>)              = 0
+1534  nanosleep({tv_sec=0, tv_nsec=3000},  <unfinished ...>
+1530  futex(0xc000100148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1527  <... nanosleep resumed>NULL)      = 0
+1526  futex(0xc000100148, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1534  <... nanosleep resumed>NULL)      = 0
+1526  <... futex resumed>)              = 0
+1530  <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+1527  nanosleep({tv_sec=0, tv_nsec=160000},  <unfinished ...>
+1526  futex(0x1ddddc0, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1534  futex(0xc00006e948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1530  futex(0xc000100148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1527  <... nanosleep resumed>NULL)      = 0
+1534  <... futex resumed>)              = 1
+1528  <... futex resumed>)              = 0
+1527  nanosleep({tv_sec=0, tv_nsec=320000},  <unfinished ...>
+1534  futex(0x1ddddc0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1528  futex(0xc00006e948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1526  <... futex resumed>)              = 0
+1534  <... futex resumed>)              = 1
+1527  <... nanosleep resumed>NULL)      = 0
+1526  futex(0xc00006e948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1534  futex(0xc000101948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1527  nanosleep({tv_sec=0, tv_nsec=640000},  <unfinished ...>
+1526  <... futex resumed>)              = 1
+1528  <... futex resumed>)              = 0
+1526  futex(0xc000101948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1528  nanosleep({tv_sec=0, tv_nsec=3000},  <unfinished ...>
+1526  <... futex resumed>)              = 1
+1534  <... futex resumed>)              = 0
+1526  futex(0x1ddddc0, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1528  <... nanosleep resumed>NULL)      = 0
+1527  <... nanosleep resumed>NULL)      = 0
+1526  <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+1534  futex(0x1ddddc0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1528  futex(0xc00006e948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1527  nanosleep({tv_sec=0, tv_nsec=1280000},  <unfinished ...>
+1534  <... futex resumed>)              = 0
+1534  futex(0xc000101948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1526  uname({sysname="Linux", nodename="ubuntu", ...}) = 0
+1527  <... nanosleep resumed>NULL)      = 0
+1527  nanosleep({tv_sec=0, tv_nsec=2560000},  <unfinished ...>
+1526  newfstatat(AT_FDCWD, "/usr/local/go/src",  <unfinished ...>
+1527  <... nanosleep resumed>NULL)      = 0
+1526  <... newfstatat resumed>0xc0000e00f8, 0) = -1 ENOENT (No such file or directory)
+1527  nanosleep({tv_sec=0, tv_nsec=5120000},  <unfinished ...>
+1526  newfstatat(AT_FDCWD, "/home/ubuntu/go/src", 0xc0000e01b8, 0) = -1 ENOENT (No such file or directory)
+1527  <... nanosleep resumed>NULL)      = 0
+1526  futex(0xc000101948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1527  getpid( <unfinished ...>
+1526  <... futex resumed>)              = 1
+1534  <... futex resumed>)              = 0
+1527  <... getpid resumed>)             = 1526
+1526  futex(0xc00006e948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1534  futex(0xc000100148, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1527  tgkill(1526, 1526, SIGURG <unfinished ...>
+1526  <... futex resumed>)              = 1
+1528  <... futex resumed>)              = 0
+1526  --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=1526, si_uid=1000} ---
+1534  <... futex resumed>)              = 1
+1530  <... futex resumed>)              = 0
+1527  <... tgkill resumed>)             = 0
+1526  rt_sigreturn({mask=[]} <unfinished ...>
+1534  futex(0x1ddddc0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1530  futex(0xc000100148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1528  futex(0xc00006e948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1526  <... rt_sigreturn resumed>)       = 1
+1534  <... futex resumed>)              = 0
+1527  nanosleep({tv_sec=0, tv_nsec=10000000},  <unfinished ...>
+1534  futex(0xc000101948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1527  <... nanosleep resumed>NULL)      = 0
+1527  nanosleep({tv_sec=0, tv_nsec=10000000}, NULL) = 0
+1526  futex(0xc000101948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1527  getpid( <unfinished ...>
+1526  <... futex resumed>)              = 1
+1527  <... getpid resumed>)             = 1526
+1534  <... futex resumed>)              = 0
+1526  futex(0xc000100148, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1527  tgkill(1526, 1526, SIGURG <unfinished ...>
+1526  <... futex resumed>)              = 1
+1534  futex(0xc00006e948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1530  <... futex resumed>)              = 0
+1526  --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=1526, si_uid=1000} ---
+1527  <... tgkill resumed>)             = 0
+1534  <... futex resumed>)              = 1
+1530  futex(0xc000100148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1528  <... futex resumed>)              = 0
+1526  rt_sigreturn({mask=[]} <unfinished ...>
+1534  futex(0x1ddddc0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1527  nanosleep({tv_sec=0, tv_nsec=10000000},  <unfinished ...>
+1526  <... rt_sigreturn resumed>)       = 1
+1534  <... futex resumed>)              = 0
+1528  futex(0xc00006e948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1534  futex(0xc000101948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1527  <... nanosleep resumed>NULL)      = 0
+1527  nanosleep({tv_sec=0, tv_nsec=10000000}, NULL) = 0
+1527  getpid( <unfinished ...>
+1526  futex(0xc000101948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1527  <... getpid resumed>)             = 1526
+1526  <... futex resumed>)              = 1
+1534  <... futex resumed>)              = 0
+1527  tgkill(1526, 1526, SIGURG <unfinished ...>
+1526  futex(0xc00006e948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1534  futex(0xc000100148, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1527  <... tgkill resumed>)             = 0
+1526  <... futex resumed>)              = 1
+1534  <... futex resumed>)              = 1
+1528  <... futex resumed>)              = 0
+1526  --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=1526, si_uid=1000} ---
+1530  <... futex resumed>)              = 0
+1527  nanosleep({tv_sec=0, tv_nsec=10000000},  <unfinished ...>
+1526  rt_sigreturn({mask=[]} <unfinished ...>
+1534  futex(0x1ddddc0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1530  futex(0xc000100148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1528  futex(0xc00006e948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1526  <... rt_sigreturn resumed>)       = 1
+1534  <... futex resumed>)              = 0
+1534  futex(0xc000101948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1527  <... nanosleep resumed>NULL)      = 0
+1527  nanosleep({tv_sec=0, tv_nsec=10000000},  <unfinished ...>
+1526  epoll_pwait(4, [], 128, 0, NULL, 0) = 0
+1526  futex(0xc000101948, FUTEX_WAKE_PRIVATE, 1) = 1
+1534  <... futex resumed>)              = 0
+1534  futex(0xc000100148, FUTEX_WAKE_PRIVATE, 1) = 1
+1530  <... futex resumed>)              = 0
+1530  futex(0xc00006e948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1527  <... nanosleep resumed>NULL)      = 0
+1530  <... futex resumed>)              = 1
+1528  <... futex resumed>)              = 0
+1530  nanosleep({tv_sec=0, tv_nsec=3000},  <unfinished ...>
+1527  getpid( <unfinished ...>
+1528  nanosleep({tv_sec=0, tv_nsec=3000},  <unfinished ...>
+1530  <... nanosleep resumed>NULL)      = 0
+1527  <... getpid resumed>)             = 1526
+1526  rt_sigprocmask(SIG_SETMASK, ~[],  <unfinished ...>
+1528  <... nanosleep resumed>NULL)      = 0
+1526  <... rt_sigprocmask resumed>[], 8) = 0
+1527  tgkill(1526, 1526, SIGURG <unfinished ...>
+1528  futex(0x1ddddc0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1526  clone(child_stack=0xc000550000, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM <unfinished ...>
+1528  <... futex resumed>)              = 0
+1527  <... tgkill resumed>)             = 0
+1528  futex(0xc00006e948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1527  nanosleep({tv_sec=0, tv_nsec=10000000},  <unfinished ...>
+1526  <... clone resumed>)              = 1535
+1535  gettid( <unfinished ...>
+1530  sched_yield( <unfinished ...>
+1526  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+1535  <... gettid resumed>)             = 1535
+1526  <... rt_sigprocmask resumed>NULL, 8) = 0
+1530  <... sched_yield resumed>)        = 0
+1526  --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=1526, si_uid=1000} ---
+1535  sigaltstack(NULL,  <unfinished ...>
+1526  rt_sigreturn({mask=[]} <unfinished ...>
+1535  <... sigaltstack resumed>{ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=0}) = 0
+1526  <... rt_sigreturn resumed>)       = 0
+1535  sigaltstack({ss_sp=0xc0002f0000, ss_flags=0, ss_size=32768}, NULL) = 0
+1535  rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+1526  sched_yield( <unfinished ...>
+1535  gettid( <unfinished ...>
+1534  getpid( <unfinished ...>
+1530  sched_yield( <unfinished ...>
+1526  <... sched_yield resumed>)        = 0
+1535  <... gettid resumed>)             = 1535
+1534  <... getpid resumed>)             = 1526
+1526  futex(0x1de9138, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+1530  <... sched_yield resumed>)        = 0
+1535  sched_yield( <unfinished ...>
+1526  <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+1534  tgkill(1526, 1526, SIGURG <unfinished ...>
+1530  futex(0x1de9138, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+1527  <... nanosleep resumed>NULL)      = 0
+1526  sched_yield( <unfinished ...>
+1535  <... sched_yield resumed>)        = 0
+1534  <... tgkill resumed>)             = 0
+1526  <... sched_yield resumed>)        = 0
+1535  futex(0x1de9138, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+1527  getpid( <unfinished ...>
+1526  --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=1526, si_uid=1000} ---
+1535  <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+1534  futex(0x1de9138, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1527  <... getpid resumed>)             = 1526
+1526  rt_sigreturn({mask=[]} <unfinished ...>
+1535  futex(0x1de9138, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1534  <... futex resumed>)              = 1
+1526  <... rt_sigreturn resumed>)       = 0
+1535  <... futex resumed>)              = 0
+1530  <... futex resumed>)              = 0
+1527  tgkill(1526, 1534, SIGURG <unfinished ...>
+1526  futex(0x1de9138, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1535  futex(0x1ddddc0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1534  futex(0x1de9238, FUTEX_WAIT_PRIVATE, 0, {tv_sec=0, tv_nsec=100000} <unfinished ...>
+1530  futex(0x1de9138, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1526  <... futex resumed>)              = 0
+1535  <... futex resumed>)              = 0
+1534  <... futex resumed>)              = ? ERESTART_RESTARTBLOCK (Interrupted by signal)
+1527  <... tgkill resumed>)             = 0
+1535  futex(0xc000330948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1534  --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=1526, si_uid=1000} ---
+1530  <... futex resumed>)              = 0
+1534  rt_sigreturn({mask=[]} <unfinished ...>
+1530  futex(0x1de9238, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1527  nanosleep({tv_sec=0, tv_nsec=10000000},  <unfinished ...>
+1534  <... rt_sigreturn resumed>)       = -1 EINTR (Interrupted system call)
+1530  <... futex resumed>)              = 0
+1534  sched_yield( <unfinished ...>
+1526  mmap(NULL, 65536, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+1530  futex(0xc000100148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1526  <... mmap resumed>)               = 0x7ff432214000
+1534  <... sched_yield resumed>)        = 0
+1534  futex(0x1de9138, FUTEX_WAKE_PRIVATE, 1) = 0
+1534  futex(0xc000100148, FUTEX_WAKE_PRIVATE, 1) = 1
+1530  <... futex resumed>)              = 0
+1534  getpid( <unfinished ...>
+1530  sched_yield( <unfinished ...>
+1534  <... getpid resumed>)             = 1526
+1530  <... sched_yield resumed>)        = 0
+1534  tgkill(1526, 1526, SIGURG <unfinished ...>
+1530  futex(0x1de9138, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+1526  --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=1526, si_uid=1000} ---
+1534  <... tgkill resumed>)             = 0
+1526  rt_sigreturn({mask=[]} <unfinished ...>
+1534  futex(0x1de9138, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1526  <... rt_sigreturn resumed>)       = 824640376768
+1534  <... futex resumed>)              = 1
+1530  <... futex resumed>)              = 0
+1534  futex(0x1de9238, FUTEX_WAIT_PRIVATE, 0, {tv_sec=0, tv_nsec=100000} <unfinished ...>
+1530  futex(0x1de9138, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1534  <... futex resumed>)              = -1 ETIMEDOUT (Connection timed out)
+1530  <... futex resumed>)              = 0
+1534  getpid()                          = 1526
+1530  futex(0xc000100148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1534  tgkill(1526, 1526, SIGURG <unfinished ...>
+1526  --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=1526, si_uid=1000} ---
+1534  <... tgkill resumed>)             = 0
+1526  rt_sigreturn({mask=[]} <unfinished ...>
+1534  futex(0x1de9238, FUTEX_WAIT_PRIVATE, 0, {tv_sec=0, tv_nsec=100000} <unfinished ...>
+1526  <... rt_sigreturn resumed>)       = 824640249792
+1526  futex(0xc000100148, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1534  <... futex resumed>)              = -1 ETIMEDOUT (Connection timed out)
+1526  <... futex resumed>)              = 1
+1534  futex(0x1de9238, FUTEX_WAIT_PRIVATE, 0, {tv_sec=0, tv_nsec=100000} <unfinished ...>
+1530  <... futex resumed>)              = 0
+1526  futex(0xc000330948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1527  <... nanosleep resumed>NULL)      = 0
+1526  <... futex resumed>)              = 1
+1534  <... futex resumed>)              = -1 ETIMEDOUT (Connection timed out)
+1530  futex(0xc00006e948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1526  futex(0x1ddddc0, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1535  <... futex resumed>)              = 0
+1534  futex(0x1de9238, FUTEX_WAIT_PRIVATE, 0, {tv_sec=0, tv_nsec=100000} <unfinished ...>
+1527  nanosleep({tv_sec=0, tv_nsec=10000000},  <unfinished ...>
+1535  futex(0x1de9238, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1534  <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+1530  <... futex resumed>)              = 1
+1528  <... futex resumed>)              = 0
+1535  <... futex resumed>)              = 0
+1534  sched_yield( <unfinished ...>
+1530  sched_yield( <unfinished ...>
+1535  futex(0xc000330948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1534  <... sched_yield resumed>)        = 0
+1528  sched_yield( <unfinished ...>
+1530  <... sched_yield resumed>)        = 0
+1534  futex(0x1de9138, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1530  futex(0x1de9138, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1528  <... sched_yield resumed>)        = 0
+1534  <... futex resumed>)              = 0
+1530  <... futex resumed>)              = 0
+1528  futex(0x1de9138, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1534  futex(0x1de9210, FUTEX_WAIT_PRIVATE, 0, {tv_sec=0, tv_nsec=100000} <unfinished ...>
+1530  futex(0x1ddddc0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1528  <... futex resumed>)              = 0
+1526  <... futex resumed>)              = 0
+1534  <... futex resumed>)              = -1 ETIMEDOUT (Connection timed out)
+1530  <... futex resumed>)              = 1
+1528  futex(0xc00006e948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1526  futex(0xc00006e948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1534  getpid( <unfinished ...>
+1530  futex(0xc000100148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1526  <... futex resumed>)              = 0
+1534  <... getpid resumed>)             = 1526
+1528  <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+1526  futex(0x1ddddc0, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1534  tgkill(1526, 1526, SIGURG <unfinished ...>
+1528  futex(0x1de9210, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1534  <... tgkill resumed>)             = 0
+1526  <... futex resumed>)              = ? ERESTARTSYS (To be restarted if SA_RESTART is set)
+1528  <... futex resumed>)              = 0
+1534  sched_yield( <unfinished ...>
+1526  --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=1526, si_uid=1000} ---
+1534  <... sched_yield resumed>)        = 0
+1528  futex(0xc00006e948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1526  rt_sigreturn({mask=[]} <unfinished ...>
+1534  futex(0x1de9138, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1526  <... rt_sigreturn resumed>)       = 31317440
+1534  <... futex resumed>)              = 0
+1526  futex(0x1ddddc0, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1534  epoll_pwait(4, [], 128, 0, NULL, 0) = 0
+1527  <... nanosleep resumed>NULL)      = 0
+1527  sched_yield( <unfinished ...>
+1534  mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+1527  <... sched_yield resumed>)        = 0
+1534  <... mmap resumed>)               = 0x7ff3eb720000
+1527  futex(0x1de9138, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+1534  futex(0x1de9138, FUTEX_WAKE_PRIVATE, 1) = 1
+1527  <... futex resumed>)              = 0
+1534  futex(0xc00006e948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1527  futex(0x1de9138, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1534  <... futex resumed>)              = 1
+1528  <... futex resumed>)              = 0
+1527  <... futex resumed>)              = 0
+1527  getpid()                          = 1526
+1534  sched_yield( <unfinished ...>
+1528  mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+1527  tgkill(1526, 1534, SIGURG <unfinished ...>
+1534  <... sched_yield resumed>)        = 0
+1528  <... mmap resumed>)               = 0x7ff3eb6e0000
+1527  <... tgkill resumed>)             = 0
+1534  --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=1526, si_uid=1000} ---
+1527  nanosleep({tv_sec=0, tv_nsec=10000000},  <unfinished ...>
+1534  rt_sigreturn({mask=[]})           = 0
+1528  sched_yield( <unfinished ...>
+1534  futex(0x1e03830, FUTEX_WAKE_PRIVATE, 1) = 0
+1528  <... sched_yield resumed>)        = 0
+1528  futex(0x1de9138, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+1534  futex(0x1de9138, FUTEX_WAKE_PRIVATE, 1) = 1
+1528  <... futex resumed>)              = 0
+1534  futex(0x1de9238, FUTEX_WAIT_PRIVATE, 0, {tv_sec=0, tv_nsec=100000} <unfinished ...>
+1528  futex(0x1de9238, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1534  <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+1528  <... futex resumed>)              = 0
+1534  sched_yield()                     = 0
+1528  futex(0xc000100148, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1534  futex(0x1de9138, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1528  <... futex resumed>)              = 1
+1530  <... futex resumed>)              = 0
+1534  <... futex resumed>)              = 0
+1528  futex(0x1ddddc0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1530  nanosleep({tv_sec=0, tv_nsec=3000},  <unfinished ...>
+1526  <... futex resumed>)              = 0
+1528  <... futex resumed>)              = 1
+1530  <... nanosleep resumed>NULL)      = 0
+1528  futex(0xc00006e948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1527  <... nanosleep resumed>NULL)      = 0
+1530  futex(0xc00006e948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1528  <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+1530  <... futex resumed>)              = 0
+1527  nanosleep({tv_sec=0, tv_nsec=10000000},  <unfinished ...>
+1534  mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+1530  futex(0xc000100148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1528  futex(0xc00006e948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1534  <... mmap resumed>)               = 0x7ff3eb6a0000
+1534  futex(0xc000101948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1527  <... nanosleep resumed>NULL)      = 0
+1527  futex(0xc000101948, FUTEX_WAKE_PRIVATE, 1) = 1
+1534  <... futex resumed>)              = 0
+1527  getpid( <unfinished ...>
+1534  futex(0xc000101948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1527  <... getpid resumed>)             = 1526
+1527  tgkill(1526, 1526, SIGURG <unfinished ...>
+1526  futex(0xc000101948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1527  <... tgkill resumed>)             = 0
+1526  <... futex resumed>)              = 1
+1534  <... futex resumed>)              = 0
+1526  --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=1526, si_uid=1000} ---
+1527  nanosleep({tv_sec=0, tv_nsec=10000000},  <unfinished ...>
+1526  rt_sigreturn({mask=[]} <unfinished ...>
+1534  futex(0xc000100148, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1526  <... rt_sigreturn resumed>)       = 1
+1534  <... futex resumed>)              = 1
+1530  <... futex resumed>)              = 0
+1526  futex(0x1ddddc0, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1534  futex(0x1ddddc0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1526  <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+1530  futex(0xc000100148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1534  <... futex resumed>)              = 0
+1534  futex(0xc000101948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1527  <... nanosleep resumed>NULL)      = 0
+1527  nanosleep({tv_sec=0, tv_nsec=10000000}, NULL) = 0
+1526  futex(0xc000101948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1527  getpid( <unfinished ...>
+1526  <... futex resumed>)              = 1
+1534  <... futex resumed>)              = 0
+1527  <... getpid resumed>)             = 1526
+1526  futex(0xc000100148, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1534  futex(0xc00006e948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1527  tgkill(1526, 1526, SIGURG <unfinished ...>
+1526  <... futex resumed>)              = 1
+1534  <... futex resumed>)              = 1
+1530  <... futex resumed>)              = 0
+1526  --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=1526, si_uid=1000} ---
+1534  futex(0x1ddddc0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1528  <... futex resumed>)              = 0
+1527  <... tgkill resumed>)             = 0
+1530  futex(0xc000100148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1526  rt_sigreturn({mask=[]} <unfinished ...>
+1534  <... futex resumed>)              = 0
+1528  futex(0xc00006e948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1527  nanosleep({tv_sec=0, tv_nsec=10000000},  <unfinished ...>
+1526  <... rt_sigreturn resumed>)       = 1
+1534  futex(0xc000101948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1527  <... nanosleep resumed>NULL)      = 0
+1527  nanosleep({tv_sec=0, tv_nsec=10000000}, NULL) = 0
+1527  getpid()                          = 1526
+1527  tgkill(1526, 1526, SIGURG <unfinished ...>
+1526  --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=1526, si_uid=1000} ---
+1527  <... tgkill resumed>)             = 0
+1526  rt_sigreturn({mask=[]} <unfinished ...>
+1527  nanosleep({tv_sec=0, tv_nsec=10000000},  <unfinished ...>
+1526  <... rt_sigreturn resumed>)       = 824640606144
+1526  futex(0xc000101948, FUTEX_WAKE_PRIVATE, 1) = 1
+1534  <... futex resumed>)              = 0
+1526  futex(0xc00006e948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1534  futex(0xc000100148, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1526  <... futex resumed>)              = 1
+1534  <... futex resumed>)              = 1
+1530  <... futex resumed>)              = 0
+1528  <... futex resumed>)              = 0
+1526  futex(0x1ddddc0, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1534  futex(0x1ddddc0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1530  futex(0xc000100148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1526  <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+1528  futex(0xc00006e948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1534  <... futex resumed>)              = 0
+1534  futex(0xc000101948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1527  <... nanosleep resumed>NULL)      = 0
+1527  nanosleep({tv_sec=0, tv_nsec=10000000}, NULL) = 0
+1526  futex(0xc000101948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1527  getpid( <unfinished ...>
+1526  <... futex resumed>)              = 1
+1534  <... futex resumed>)              = 0
+1527  <... getpid resumed>)             = 1526
+1526  futex(0xc00006e948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1534  futex(0xc000100148, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1526  <... futex resumed>)              = 1
+1527  tgkill(1526, 1526, SIGURG <unfinished ...>
+1526  futex(0x1ddddc0, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1534  <... futex resumed>)              = 1
+1530  <... futex resumed>)              = 0
+1528  <... futex resumed>)              = 0
+1526  <... futex resumed>)              = ? ERESTARTSYS (To be restarted if SA_RESTART is set)
+1534  futex(0x1ddddc0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1530  futex(0xc000100148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1527  <... tgkill resumed>)             = 0
+1526  --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=1526, si_uid=1000} ---
+1534  <... futex resumed>)              = 0
+1528  futex(0xc00006e948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1526  rt_sigreturn({mask=[]} <unfinished ...>
+1534  futex(0xc000101948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1527  nanosleep({tv_sec=0, tv_nsec=10000000},  <unfinished ...>
+1526  <... rt_sigreturn resumed>)       = 31317440
+1526  futex(0x1ddddc0, FUTEX_WAIT_PRIVATE, 0, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+1527  <... nanosleep resumed>NULL)      = 0
+1527  nanosleep({tv_sec=0, tv_nsec=10000000}, NULL) = 0
+1526  futex(0xc000101948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1527  getpid( <unfinished ...>
+1526  <... futex resumed>)              = 1
+1527  <... getpid resumed>)             = 1526
+1526  futex(0xc00006e948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1534  <... futex resumed>)              = 0
+1527  tgkill(1526, 1526, SIGURG <unfinished ...>
+1526  <... futex resumed>)              = 1
+1534  futex(0xc000100148, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1526  --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=1526, si_uid=1000} ---
+1528  <... futex resumed>)              = 0
+1527  <... tgkill resumed>)             = 0
+1526  rt_sigreturn({mask=[]} <unfinished ...>
+1534  <... futex resumed>)              = 1
+1530  <... futex resumed>)              = 0
+1526  <... rt_sigreturn resumed>)       = 1
+1534  futex(0x1ddddc0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1528  futex(0xc00006e948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1527  nanosleep({tv_sec=0, tv_nsec=10000000},  <unfinished ...>
+1534  <... futex resumed>)              = 0
+1530  futex(0xc000100148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1534  futex(0xc000101948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1527  <... nanosleep resumed>NULL)      = 0
+1527  nanosleep({tv_sec=0, tv_nsec=10000000},  <unfinished ...>
+1526  mmap(0xc000800000, 4194304, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xc000800000
+1526  epoll_pwait(4,  <unfinished ...>
+1527  <... nanosleep resumed>NULL)      = 0
+1526  <... epoll_pwait resumed>[], 128, 0, NULL, 0) = 0
+1527  futex(0x1de9220, FUTEX_WAIT_PRIVATE, 0, {tv_sec=60, tv_nsec=0} <unfinished ...>
+1526  futex(0x1de9220, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1527  <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+1526  <... futex resumed>)              = 0
+1527  sched_yield( <unfinished ...>
+1526  futex(0xc000101948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1527  <... sched_yield resumed>)        = 0
+1526  <... futex resumed>)              = 1
+1534  <... futex resumed>)              = 0
+1527  futex(0x1de9138, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1534  futex(0xc000100148, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1527  <... futex resumed>)              = 0
+1534  <... futex resumed>)              = 1
+1530  <... futex resumed>)              = 0
+1526  futex(0xc00006e948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1527  getpid( <unfinished ...>
+1530  futex(0xc000330948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1526  <... futex resumed>)              = 1
+1530  <... futex resumed>)              = 1
+1535  <... futex resumed>)              = 0
+1528  <... futex resumed>)              = 0
+1526  futex(0x1ddddc0, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1527  <... getpid resumed>)             = 1526
+1530  futex(0x1ddddc0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1526  <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+1530  <... futex resumed>)              = 0
+1526  futex(0xc000330948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1535  futex(0xc000330948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1534  futex(0xc000101948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1528  futex(0x1de9238, FUTEX_WAIT_PRIVATE, 0, {tv_sec=0, tv_nsec=100000} <unfinished ...>
+1527  tgkill(1526, 1526, SIGURG <unfinished ...>
+1526  <... futex resumed>)              = 0
+1535  <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+1530  futex(0xc000100148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1526  --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=1526, si_uid=1000} ---
+1528  <... futex resumed>)              = -1 ETIMEDOUT (Connection timed out)
+1535  futex(0xc000100148, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1527  <... tgkill resumed>)             = 0
+1526  rt_sigreturn({mask=[]} <unfinished ...>
+1535  <... futex resumed>)              = 0
+1530  <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+1528  futex(0x1de9238, FUTEX_WAIT_PRIVATE, 0, {tv_sec=0, tv_nsec=100000} <unfinished ...>
+1526  <... rt_sigreturn resumed>)       = 0
+1535  futex(0x1ddddc0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1530  futex(0xc000100148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1527  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1526  futex(0x1de9238, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1535  <... futex resumed>)              = 0
+1528  <... futex resumed>)              = -1 ETIMEDOUT (Connection timed out)
+1526  <... futex resumed>)              = 0
+1527  <... nanosleep resumed>NULL)      = 0
+1535  sched_yield( <unfinished ...>
+1528  sched_yield( <unfinished ...>
+1535  <... sched_yield resumed>)        = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1528  <... sched_yield resumed>)        = 0
+1535  futex(0x1de9138, FUTEX_WAKE_PRIVATE, 1) = 0
+1528  futex(0x1de9138, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1527  <... nanosleep resumed>NULL)      = 0
+1535  futex(0xc000330948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1528  <... futex resumed>)              = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1526  sched_yield( <unfinished ...>
+1528  getpid( <unfinished ...>
+1526  <... sched_yield resumed>)        = 0
+1528  <... getpid resumed>)             = 1526
+1527  <... nanosleep resumed>NULL)      = 0
+1526  futex(0x1de9138, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+1528  tgkill(1526, 1526, SIGURG <unfinished ...>
+1527  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1528  <... tgkill resumed>)             = 0
+1526  <... futex resumed>)              = ? ERESTARTSYS (To be restarted if SA_RESTART is set)
+1528  futex(0x1de9138, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1526  --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=1526, si_uid=1000} ---
+1527  <... nanosleep resumed>NULL)      = 0
+1528  <... futex resumed>)              = 0
+1526  rt_sigreturn({mask=[]} <unfinished ...>
+1528  futex(0x1de9238, FUTEX_WAIT_PRIVATE, 0, {tv_sec=0, tv_nsec=100000} <unfinished ...>
+1527  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1526  <... rt_sigreturn resumed>)       = 31363384
+1526  futex(0x1de9138, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+1528  <... futex resumed>)              = -1 ETIMEDOUT (Connection timed out)
+1527  <... nanosleep resumed>NULL)      = 0
+1526  <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+1528  futex(0x1de9238, FUTEX_WAIT_PRIVATE, 0, {tv_sec=0, tv_nsec=100000} <unfinished ...>
+1526  futex(0x1de9138, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1527  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1526  <... futex resumed>)              = 0
+1528  <... futex resumed>)              = -1 ETIMEDOUT (Connection timed out)
+1526  futex(0xc000330948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1528  futex(0x1de9238, FUTEX_WAIT_PRIVATE, 0, {tv_sec=0, tv_nsec=100000} <unfinished ...>
+1527  <... nanosleep resumed>NULL)      = 0
+1526  <... futex resumed>)              = 1
+1535  <... futex resumed>)              = 0
+1528  <... futex resumed>)              = -1 ETIMEDOUT (Connection timed out)
+1527  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1526  futex(0xc000100148, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1535  futex(0xc000101948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1528  futex(0x1de9238, FUTEX_WAIT_PRIVATE, 0, {tv_sec=0, tv_nsec=100000} <unfinished ...>
+1526  <... futex resumed>)              = 1
+1535  <... futex resumed>)              = 1
+1534  <... futex resumed>)              = 0
+1530  <... futex resumed>)              = 0
+1527  <... nanosleep resumed>NULL)      = 0
+1526  futex(0x1ddddc0, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1535  futex(0x1ddddc0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1528  <... futex resumed>)              = -1 ETIMEDOUT (Connection timed out)
+1526  <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+1535  <... futex resumed>)              = 0
+1534  futex(0xc000101948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1530  futex(0x1de9238, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1527  getpid( <unfinished ...>
+1535  sched_yield( <unfinished ...>
+1530  <... futex resumed>)              = 0
+1528  sched_yield( <unfinished ...>
+1535  <... sched_yield resumed>)        = 0
+1527  <... getpid resumed>)             = 1526
+1530  futex(0xc000100148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1535  futex(0x1de9138, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1528  <... sched_yield resumed>)        = 0
+1527  tgkill(1526, 1528, SIGURG <unfinished ...>
+1535  <... futex resumed>)              = 0
+1528  futex(0x1de9138, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1527  <... tgkill resumed>)             = 0
+1535  futex(0xc000330948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1528  <... futex resumed>)              = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1528  --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=1526, si_uid=1000} ---
+1528  rt_sigreturn({mask=[]} <unfinished ...>
+1527  <... nanosleep resumed>NULL)      = 0
+1528  <... rt_sigreturn resumed>)       = 0
+1527  getpid( <unfinished ...>
+1526  sched_yield( <unfinished ...>
+1528  getpid( <unfinished ...>
+1527  <... getpid resumed>)             = 1526
+1526  <... sched_yield resumed>)        = 0
+1528  <... getpid resumed>)             = 1526
+1527  tgkill(1526, 1528, SIGURG <unfinished ...>
+1526  futex(0x1de9138, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+1528  tgkill(1526, 1526, SIGURG <unfinished ...>
+1527  <... tgkill resumed>)             = 0
+1528  <... tgkill resumed>)             = 0
+1526  <... futex resumed>)              = ? ERESTARTSYS (To be restarted if SA_RESTART is set)
+1527  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1526  --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=1526, si_uid=1000} ---
+1528  --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=1526, si_uid=1000} ---
+1527  <... nanosleep resumed>NULL)      = 0
+1526  rt_sigreturn({mask=[]} <unfinished ...>
+1528  rt_sigreturn({mask=[]} <unfinished ...>
+1527  sched_yield( <unfinished ...>
+1526  <... rt_sigreturn resumed>)       = 31363384
+1528  <... rt_sigreturn resumed>)       = 0
+1527  <... sched_yield resumed>)        = 0
+1526  futex(0x1de9138, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+1528  futex(0x1de9210, FUTEX_WAIT_PRIVATE, 0, {tv_sec=0, tv_nsec=100000} <unfinished ...>
+1527  futex(0x1de9138, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1526  <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+1527  <... futex resumed>)              = 0
+1526  futex(0x1de9138, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1528  <... futex resumed>)              = -1 ETIMEDOUT (Connection timed out)
+1527  futex(0x1de9220, FUTEX_WAIT_PRIVATE, 0, {tv_sec=60, tv_nsec=0} <unfinished ...>
+1526  <... futex resumed>)              = 0
+1528  futex(0x1de9210, FUTEX_WAIT_PRIVATE, 0, {tv_sec=0, tv_nsec=100000} <unfinished ...>
+1526  futex(0xc000330948, FUTEX_WAKE_PRIVATE, 1) = 1
+1535  <... futex resumed>)              = 0
+1528  <... futex resumed>)              = -1 ETIMEDOUT (Connection timed out)
+1526  futex(0x1ddddc0, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1535  futex(0x1de9210, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1528  sched_yield( <unfinished ...>
+1535  <... futex resumed>)              = 0
+1528  <... sched_yield resumed>)        = 0
+1535  futex(0xc000330948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1528  futex(0x1de9138, FUTEX_WAKE_PRIVATE, 1) = 0
+1528  epoll_pwait(4, [], 128, 0, NULL, 0) = 0
+1528  futex(0x1de9220, FUTEX_WAKE_PRIVATE, 1) = 1
+1527  <... futex resumed>)              = 0
+1528  futex(0xc000330948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1527  getpid( <unfinished ...>
+1528  <... futex resumed>)              = 1
+1535  <... futex resumed>)              = 0
+1527  <... getpid resumed>)             = 1526
+1528  futex(0x1de9238, FUTEX_WAIT_PRIVATE, 0, {tv_sec=0, tv_nsec=100000} <unfinished ...>
+1535  futex(0x1de9238, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1527  tgkill(1526, 1528, SIGURG <unfinished ...>
+1535  <... futex resumed>)              = 0
+1528  <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+1535  futex(0xc000100148, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1527  <... tgkill resumed>)             = 0
+1528  --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=1526, si_uid=1000} ---
+1535  <... futex resumed>)              = 1
+1530  <... futex resumed>)              = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1535  futex(0x1ddddc0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1530  nanosleep({tv_sec=0, tv_nsec=3000},  <unfinished ...>
+1528  rt_sigreturn({mask=[]} <unfinished ...>
+1526  <... futex resumed>)              = 0
+1535  <... futex resumed>)              = 1
+1527  <... nanosleep resumed>NULL)      = 0
+1530  <... nanosleep resumed>NULL)      = 0
+1535  futex(0xc000330948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1528  <... rt_sigreturn resumed>)       = -1 EAGAIN (Resource temporarily unavailable)
+1530  futex(0xc000330948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1527  getpid( <unfinished ...>
+1535  <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+1528  futex(0xc00006e948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1535  futex(0xc000330948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1530  <... futex resumed>)              = 0
+1527  <... getpid resumed>)             = 1526
+1527  tgkill(1526, 1528, SIGURG <unfinished ...>
+1528  <... futex resumed>)              = ? ERESTARTSYS (To be restarted if SA_RESTART is set)
+1527  <... tgkill resumed>)             = 0
+1528  --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=1526, si_uid=1000} ---
+1527  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1528  rt_sigreturn({mask=[]})           = 824634173768
+1527  <... nanosleep resumed>NULL)      = 0
+1530  futex(0xc000100148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1528  futex(0xc00006e948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1530  <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+1527  futex(0xc000100148, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1530  sched_yield( <unfinished ...>
+1527  <... futex resumed>)              = 0
+1530  <... sched_yield resumed>)        = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1530  futex(0x1de9138, FUTEX_WAKE_PRIVATE, 1) = 0
+1527  <... nanosleep resumed>NULL)      = 0
+1530  futex(0xc000100148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1527  nanosleep({tv_sec=0, tv_nsec=20000}, NULL) = 0
+1526  futex(0xc000100148, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1527  getpid( <unfinished ...>
+1526  <... futex resumed>)              = 1
+1530  <... futex resumed>)              = 0
+1527  <... getpid resumed>)             = 1526
+1526  futex(0xc000330948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1530  futex(0xc00006e948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1526  <... futex resumed>)              = 1
+1527  tgkill(1526, 1526, SIGURG <unfinished ...>
+1526  futex(0x1ddddc0, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1535  <... futex resumed>)              = 0
+1530  <... futex resumed>)              = 1
+1528  <... futex resumed>)              = 0
+1527  <... tgkill resumed>)             = 0
+1526  <... futex resumed>)              = ? ERESTARTSYS (To be restarted if SA_RESTART is set)
+1535  futex(0xc000330948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1530  futex(0x1ddddc0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1528  futex(0xc00006e948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1526  --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=1526, si_uid=1000} ---
+1530  <... futex resumed>)              = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1526  rt_sigreturn({mask=[]} <unfinished ...>
+1530  futex(0xc000100148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1526  <... rt_sigreturn resumed>)       = 31317440
+1527  <... nanosleep resumed>NULL)      = 0
+1526  futex(0x1ddddc0, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1527  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1526  <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+1527  <... nanosleep resumed>NULL)      = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000}, NULL) = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000}, NULL) = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000}, NULL) = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000}, NULL) = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000}, NULL) = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000}, NULL) = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000}, NULL) = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000}, NULL) = 0
+1526  futex(0xc000100148, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1527  getpid( <unfinished ...>
+1526  <... futex resumed>)              = 1
+1530  <... futex resumed>)              = 0
+1527  <... getpid resumed>)             = 1526
+1526  futex(0xc00006e948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1530  futex(0xc000330948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1526  <... futex resumed>)              = 1
+1527  tgkill(1526, 1526, SIGURG <unfinished ...>
+1526  futex(0x1ddddc0, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1535  <... futex resumed>)              = 0
+1530  <... futex resumed>)              = 1
+1528  <... futex resumed>)              = 0
+1526  <... futex resumed>)              = ? ERESTARTSYS (To be restarted if SA_RESTART is set)
+1535  futex(0xc000330948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1530  futex(0x1ddddc0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1527  <... tgkill resumed>)             = 0
+1526  --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=1526, si_uid=1000} ---
+1530  <... futex resumed>)              = 0
+1528  futex(0xc00006e948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1527  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1526  rt_sigreturn({mask=[]} <unfinished ...>
+1530  futex(0xc000100148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1526  <... rt_sigreturn resumed>)       = 31317440
+1527  <... nanosleep resumed>NULL)      = 0
+1526  futex(0x1ddddc0, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1527  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1526  <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+1527  <... nanosleep resumed>NULL)      = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000}, NULL) = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000}, NULL) = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000}, NULL) = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1526  newfstatat(AT_FDCWD, "./geth_evm_riscv64_linux",  <unfinished ...>
+1527  <... nanosleep resumed>NULL)      = 0
+1526  <... newfstatat resumed>{st_mode=S_IFREG|0775, st_size=44878232, ...}, 0) = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000}, NULL) = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000}, NULL) = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000}, NULL) = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000}, NULL) = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000}, NULL) = 0
+1526  futex(0xc000100148, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1527  getpid( <unfinished ...>
+1526  <... futex resumed>)              = 1
+1527  <... getpid resumed>)             = 1526
+1530  <... futex resumed>)              = 0
+1527  tgkill(1526, 1526, SIGURG <unfinished ...>
+1526  --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=1526, si_uid=1000} ---
+1530  futex(0xc000100148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1527  <... tgkill resumed>)             = 0
+1526  rt_sigreturn({mask=[]} <unfinished ...>
+1527  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1526  <... rt_sigreturn resumed>)       = 15345120
+1527  <... nanosleep resumed>NULL)      = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000}, NULL) = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000}, NULL) = 0
+1526  ioctl(2, TCGETS <unfinished ...>
+1527  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1526  <... ioctl resumed>, {c_iflag=ICRNL|IXON|IXOFF|IUTF8, c_oflag=NL0|CR0|TAB0|BS0|VT0|FF0|OPOST|ONLCR, c_cflag=B9600|CS8|CREAD|HUPCL|CLOCAL, c_lflag=ISIG|ICANON|ECHO|ECHOE|ECHOK|ECHOCTL|ECHOKE, ...}) = 0
+1527  <... nanosleep resumed>NULL)      = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000}, NULL) = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000}, NULL) = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000}, NULL) = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000}, NULL) = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000}, NULL) = 0
+1526  futex(0xc000100148, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1527  getpid( <unfinished ...>
+1526  <... futex resumed>)              = 1
+1530  <... futex resumed>)              = 0
+1527  <... getpid resumed>)             = 1526
+1530  futex(0xc000100148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1527  tgkill(1526, 1526, SIGURG <unfinished ...>
+1526  --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=1526, si_uid=1000} ---
+1527  <... tgkill resumed>)             = 0
+1526  rt_sigreturn({mask=[]} <unfinished ...>
+1527  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1526  <... rt_sigreturn resumed>)       = 14203680
+1527  <... nanosleep resumed>NULL)      = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000}, NULL) = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000}, NULL) = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000}, NULL) = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000}, NULL) = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000}, NULL) = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000}, NULL) = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1526  openat(AT_FDCWD, "./assets/alloc.json", O_RDONLY|O_CLOEXEC <unfinished ...>
+1527  <... nanosleep resumed>NULL)      = 0
+1526  <... openat resumed>)             = 3
+1527  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1526  fcntl(3, F_GETFL)                 = 0x8000 (flags O_RDONLY|O_LARGEFILE)
+1527  <... nanosleep resumed>NULL)      = 0
+1526  fcntl(3, F_SETFL, O_RDONLY|O_NONBLOCK|O_LARGEFILE <unfinished ...>
+1527  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1526  <... fcntl resumed>)              = 0
+1526  epoll_ctl(4, EPOLL_CTL_ADD, 3, {events=EPOLLIN|EPOLLOUT|EPOLLRDHUP|EPOLLET, data={u32=2190391301, u64=36015514875508741}} <unfinished ...>
+1527  <... nanosleep resumed>NULL)      = 0
+1526  <... epoll_ctl resumed>)          = -1 EPERM (Operation not permitted)
+1527  getpid( <unfinished ...>
+1526  futex(0xc000100148, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1527  <... getpid resumed>)             = 1526
+1526  <... futex resumed>)              = 1
+1530  <... futex resumed>)              = 0
+1527  tgkill(1526, 1526, SIGURG <unfinished ...>
+1526  fcntl(3, F_GETFL <unfinished ...>
+1530  futex(0xc000100148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1527  <... tgkill resumed>)             = 0
+1526  <... fcntl resumed>)              = 0x8800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE)
+1527  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1526  --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=1526, si_uid=1000} ---
+1526  rt_sigreturn({mask=[]} <unfinished ...>
+1527  <... nanosleep resumed>NULL)      = 0
+1526  <... rt_sigreturn resumed>)       = 34816
+1527  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1526  fcntl(3, F_SETFL, O_RDONLY|O_LARGEFILE) = 0
+1527  <... nanosleep resumed>NULL)      = 0
+1526  read(3,  <unfinished ...>
+1527  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1526  <... read resumed>"{\n  \"0x8a0a19589531694250d570040"..., 512) = 512
+1527  <... nanosleep resumed>NULL)      = 0
+1526  read(3,  <unfinished ...>
+1527  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1526  <... read resumed>"\": \"0x58808080600173703c4b2bd70c"..., 1024) = 401
+1527  <... nanosleep resumed>NULL)      = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000}, NULL) = 0
+1527  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1526  close(3 <unfinished ...>
+1527  <... nanosleep resumed>NULL)      = 0
+1526  <... close resumed>)              = 0
+1527  nanosleep({tv_sec=0, tv_nsec=40000},  <unfinished ...>
+1526  openat(AT_FDCWD, "./assets/env.json", O_RDONLY|O_CLOEXEC <unfinished ...>
+1527  <... nanosleep resumed>NULL)      = 0
+1526  <... openat resumed>)             = 3
+1527  nanosleep({tv_sec=0, tv_nsec=80000},  <unfinished ...>
+1526  fcntl(3, F_GETFL)                 = 0x8000 (flags O_RDONLY|O_LARGEFILE)
+1527  <... nanosleep resumed>NULL)      = 0
+1526  fcntl(3, F_SETFL, O_RDONLY|O_NONBLOCK|O_LARGEFILE <unfinished ...>
+1527  nanosleep({tv_sec=0, tv_nsec=160000},  <unfinished ...>
+1526  <... fcntl resumed>)              = 0
+1526  epoll_ctl(4, EPOLL_CTL_ADD, 3, {events=EPOLLIN|EPOLLOUT|EPOLLRDHUP|EPOLLET, data={u32=2190391302, u64=36015514875508742}} <unfinished ...>
+1527  <... nanosleep resumed>NULL)      = 0
+1526  <... epoll_ctl resumed>)          = -1 EPERM (Operation not permitted)
+1527  nanosleep({tv_sec=0, tv_nsec=320000},  <unfinished ...>
+1526  fcntl(3, F_GETFL)                 = 0x8800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE)
+1527  <... nanosleep resumed>NULL)      = 0
+1526  fcntl(3, F_SETFL, O_RDONLY|O_LARGEFILE <unfinished ...>
+1527  nanosleep({tv_sec=0, tv_nsec=640000},  <unfinished ...>
+1526  <... fcntl resumed>)              = 0
+1526  read(3, "{\n  \"currentCoinbase\": \"0x2adc25"..., 512) = 489
+1527  <... nanosleep resumed>NULL)      = 0
+1526  futex(0xc000100148, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1527  getpid( <unfinished ...>
+1526  <... futex resumed>)              = 1
+1527  <... getpid resumed>)             = 1526
+1530  <... futex resumed>)              = 0
+1527  tgkill(1526, 1526, SIGURG <unfinished ...>
+1526  --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=1526, si_uid=1000} ---
+1530  futex(0xc000100148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1527  <... tgkill resumed>)             = 0
+1526  rt_sigreturn({mask=[]} <unfinished ...>
+1527  nanosleep({tv_sec=0, tv_nsec=1280000},  <unfinished ...>
+1526  <... rt_sigreturn resumed>)       = 13123318
+1527  <... nanosleep resumed>NULL)      = 0
+1527  nanosleep({tv_sec=0, tv_nsec=2560000},  <unfinished ...>
+1526  close(3)                          = 0
+1526  openat(AT_FDCWD, "./assets/tx.json", O_RDONLY|O_CLOEXEC) = 3
+1526  fcntl(3, F_GETFL)                 = 0x8000 (flags O_RDONLY|O_LARGEFILE)
+1527  <... nanosleep resumed>NULL)      = 0
+1526  fcntl(3, F_SETFL, O_RDONLY|O_NONBLOCK|O_LARGEFILE <unfinished ...>
+1527  nanosleep({tv_sec=0, tv_nsec=5120000},  <unfinished ...>
+1526  <... fcntl resumed>)              = 0
+1526  epoll_ctl(4, EPOLL_CTL_ADD, 3, {events=EPOLLIN|EPOLLOUT|EPOLLRDHUP|EPOLLET, data={u32=2190391303, u64=36015514875508743}}) = -1 EPERM (Operation not permitted)
+1526  fcntl(3, F_GETFL)                 = 0x8800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE)
+1526  fcntl(3, F_SETFL, O_RDONLY|O_LARGEFILE) = 0
+1526  fstat(3, {st_mode=S_IFREG|0664, st_size=1117, ...}) = 0
+1526  read(3, "[\n  {\n    \"type\": \"0x4\",\n    \"ch"..., 1118) = 1117
+1526  read(3, "", 1)                    = 0
+1527  <... nanosleep resumed>NULL)      = 0
+1526  close(3 <unfinished ...>
+1527  nanosleep({tv_sec=0, tv_nsec=10000000},  <unfinished ...>
+1526  <... close resumed>)              = 0
+1527  <... nanosleep resumed>NULL)      = 0
+1526  futex(0xc000100148, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1527  getpid( <unfinished ...>
+1526  <... futex resumed>)              = 1
+1530  <... futex resumed>)              = 0
+1527  <... getpid resumed>)             = 1526
+1530  futex(0xc000100148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1527  tgkill(1526, 1526, SIGURG <unfinished ...>
+1526  --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=1526, si_uid=1000} ---
+1527  <... tgkill resumed>)             = 0
+1527  nanosleep({tv_sec=0, tv_nsec=10000000},  <unfinished ...>
+1526  rt_sigreturn({mask=[]})           = 824636564224
+1526  futex(0xc000100148, FUTEX_WAKE_PRIVATE, 1) = 1
+1530  <... futex resumed>)              = 0
+1530  futex(0xc00006e948, FUTEX_WAKE_PRIVATE, 1) = 1
+1528  <... futex resumed>)              = 0
+1526  nanosleep({tv_sec=0, tv_nsec=3000},  <unfinished ...>
+1528  futex(0xc00006e948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1526  <... nanosleep resumed>NULL)      = 0
+1526  futex(0x1ddddc0, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1530  futex(0x1ddddc0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1526  <... futex resumed>)              = 0
+1530  <... futex resumed>)              = 1
+1526  nanosleep({tv_sec=0, tv_nsec=3000},  <unfinished ...>
+1527  <... nanosleep resumed>NULL)      = 0
+1526  <... nanosleep resumed>NULL)      = 0
+1527  nanosleep({tv_sec=0, tv_nsec=10000000},  <unfinished ...>
+1526  futex(0xc00006e948, FUTEX_WAKE_PRIVATE, 1) = 1
+1528  <... futex resumed>)              = 0
+1526  sched_yield( <unfinished ...>
+1528  futex(0xc00006e948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1526  <... sched_yield resumed>)        = 0
+1526  futex(0x1de9138, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1530  futex(0xc00006e948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1526  <... futex resumed>)              = 0
+1526  nanosleep({tv_sec=0, tv_nsec=3000},  <unfinished ...>
+1530  <... futex resumed>)              = 1
+1528  <... futex resumed>)              = 0
+1526  <... nanosleep resumed>NULL)      = 0
+1528  futex(0xc00006e948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1526  futex(0x1ddddc0, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1527  <... nanosleep resumed>NULL)      = 0
+1527  nanosleep({tv_sec=0, tv_nsec=10000000},  <unfinished ...>
+1530  futex(0x1ddddc0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1527  <... nanosleep resumed>NULL)      = 0
+1526  <... futex resumed>)              = 0
+1530  <... futex resumed>)              = 1
+1527  getpid( <unfinished ...>
+1526  nanosleep({tv_sec=0, tv_nsec=3000},  <unfinished ...>
+1527  <... getpid resumed>)             = 1526
+1526  <... nanosleep resumed>NULL)      = 0
+1527  tgkill(1526, 1530, SIGURG <unfinished ...>
+1526  futex(0x1ddddc0, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1527  <... tgkill resumed>)             = 0
+1530  --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=1526, si_uid=1000} ---
+1527  nanosleep({tv_sec=0, tv_nsec=10000000},  <unfinished ...>
+1530  rt_sigreturn({mask=[]})           = 824639313104
+1530  futex(0x1ddddc0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1526  <... futex resumed>)              = 0
+1530  <... futex resumed>)              = 1
+1526  nanosleep({tv_sec=0, tv_nsec=3000}, NULL) = 0
+1526  futex(0x1ddddc0, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1530  futex(0x1ddddc0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1526  <... futex resumed>)              = 0
+1530  <... futex resumed>)              = 1
+1526  nanosleep({tv_sec=0, tv_nsec=3000}, NULL) = 0
+1526  futex(0xc00006e948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1527  <... nanosleep resumed>NULL)      = 0
+1526  <... futex resumed>)              = 1
+1528  <... futex resumed>)              = 0
+1527  nanosleep({tv_sec=0, tv_nsec=10000000},  <unfinished ...>
+1526  futex(0xc000100148, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1530  futex(0xc000100148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1528  futex(0xc00006e948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1526  <... futex resumed>)              = 0
+1530  <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+1530  futex(0xc000100148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1526  openat(AT_FDCWD, "/etc/localtime", O_RDONLY) = 3
+1526  read(3, "TZif2\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 4096) = 114
+1526  read(3, "", 4096)                 = 0
+1526  close(3)                          = 0
+1527  <... nanosleep resumed>NULL)      = 0
+1526  write(2, "\33[32mINFO \33[0m[07-19|12:52:58.93"..., 105 <unfinished ...>
+1527  nanosleep({tv_sec=0, tv_nsec=10000000},  <unfinished ...>
+1526  <... write resumed>)              = 105
+1526  write(2, "\33[32mINFO \33[0m[07-19|12:52:58.94"..., 121) = 121
+1527  <... nanosleep resumed>NULL)      = 0
+1526  futex(0xc000100148, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1527  getpid( <unfinished ...>
+1526  <... futex resumed>)              = 1
+1527  <... getpid resumed>)             = 1526
+1530  <... futex resumed>)              = 0
+1527  tgkill(1526, 1526, SIGURG <unfinished ...>
+1526  --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=1526, si_uid=1000} ---
+1530  futex(0xc000100148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1527  <... tgkill resumed>)             = 0
+1526  rt_sigreturn({mask=[]} <unfinished ...>
+1527  nanosleep({tv_sec=0, tv_nsec=10000000},  <unfinished ...>
+1526  <... rt_sigreturn resumed>)       = 1
+1526  openat(AT_FDCWD, "alloc.json", O_WRONLY|O_CREAT|O_TRUNC|O_CLOEXEC, 0644) = 3
+1526  fcntl(3, F_GETFL)                 = 0x8001 (flags O_WRONLY|O_LARGEFILE)
+1526  fcntl(3, F_SETFL, O_WRONLY|O_NONBLOCK|O_LARGEFILE) = 0
+1526  epoll_ctl(4, EPOLL_CTL_ADD, 3, {events=EPOLLIN|EPOLLOUT|EPOLLRDHUP|EPOLLET, data={u32=2190391304, u64=36015514875508744}}) = -1 EPERM (Operation not permitted)
+1526  fcntl(3, F_GETFL)                 = 0x8801 (flags O_WRONLY|O_NONBLOCK|O_LARGEFILE)
+1526  fcntl(3, F_SETFL, O_WRONLY|O_LARGEFILE) = 0
+1526  write(3, "{\n \"0x00000000000000000000000000"..., 1553) = 1553
+1526  close(3)                          = 0
+1526  write(2, "\33[32mINFO \33[0m[07-19|12:52:58.96"..., 101 <unfinished ...>
+1527  <... nanosleep resumed>NULL)      = 0
+1526  <... write resumed>)              = 101
+1527  nanosleep({tv_sec=0, tv_nsec=10000000},  <unfinished ...>
+1526  openat(AT_FDCWD, "result.json", O_WRONLY|O_CREAT|O_TRUNC|O_CLOEXEC, 0644) = 3
+1526  fcntl(3, F_GETFL)                 = 0x8001 (flags O_WRONLY|O_LARGEFILE)
+1526  fcntl(3, F_SETFL, O_WRONLY|O_NONBLOCK|O_LARGEFILE) = 0
+1527  <... nanosleep resumed>NULL)      = 0
+1526  epoll_ctl(4, EPOLL_CTL_ADD, 3, {events=EPOLLIN|EPOLLOUT|EPOLLRDHUP|EPOLLET, data={u32=2190391305, u64=36015514875508745}} <unfinished ...>
+1527  getpid( <unfinished ...>
+1526  <... epoll_ctl resumed>)          = -1 EPERM (Operation not permitted)
+1527  <... getpid resumed>)             = 1526
+1526  futex(0xc000100148, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1527  tgkill(1526, 1526, SIGURG <unfinished ...>
+1526  <... futex resumed>)              = 1
+1527  <... tgkill resumed>)             = 0
+1526  --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=1526, si_uid=1000} ---
+1530  <... futex resumed>)              = 0
+1527  nanosleep({tv_sec=0, tv_nsec=10000000},  <unfinished ...>
+1526  rt_sigreturn({mask=[]} <unfinished ...>
+1530  futex(0xc00006e948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1526  <... rt_sigreturn resumed>)       = 1
+1526  futex(0x1ddddc0, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1530  <... futex resumed>)              = 1
+1528  <... futex resumed>)              = 0
+1528  futex(0xc00006e948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1530  fcntl(3, F_GETFL)                 = 0x8801 (flags O_WRONLY|O_NONBLOCK|O_LARGEFILE)
+1530  fcntl(3, F_SETFL, O_WRONLY|O_LARGEFILE) = 0
+1530  write(3, "{\n \"stateRoot\": \"0x9fdcacd4510e9"..., 2138) = 2138
+1530  close(3)                          = 0
+1530  write(2, "\33[32mINFO \33[0m[07-19|12:52:58.99"..., 102) = 102
+1530  exit_group(0 <unfinished ...>
+1527  <... nanosleep resumed>NULL)      = 0
+1526  <... futex resumed>)              = ?
+1535  <... futex resumed>)              = ?
+1534  <... futex resumed>)              = ?
+1533  <... epoll_pwait resumed> <unfinished ...>) = ?
+1532  <... futex resumed>)              = ?
+1531  <... futex resumed>)              = ?
+1530  <... exit_group resumed>)         = ?
+1529  <... futex resumed>)              = ?
+1528  <... futex resumed>)              = ?
+1535  +++ exited with 0 +++
+1534  +++ exited with 0 +++
+1533  +++ exited with 0 +++
+1532  +++ exited with 0 +++
+1531  +++ exited with 0 +++
+1530  +++ exited with 0 +++
+1529  +++ exited with 0 +++
+1528  +++ exited with 0 +++
+1527  +++ exited with 0 +++
+1526  +++ exited with 0 +++
