@@ -13,14 +13,12 @@ fn main() {
     let input = obtain_input();
     let chain_spec: Arc<ChainSpec> = Arc::new(obtain_fork_spec().into());
     let evm_config = EthEvmConfig::new(chain_spec.clone());
-    
+
     match stateless_validation(input.block, input.witness, chain_spec, evm_config) {
         Ok(data) => println!("Block validation completed successfully: {:?}", data),
         Err(e) => panic!("Block validation failed: {:?}", e),
     }
 }
-
-
 
 fn obtain_input() -> StatelessInput {
     // Try different possible paths for the block and witness data JSON file
@@ -35,7 +33,7 @@ fn obtain_input() -> StatelessInput {
             file = Some(f);
         }
         Err(e) => {
-            panic!("Could not open {} - {}",  path, e);
+            panic!("Could not open {} - {}", path, e);
         }
     }
 
@@ -46,9 +44,7 @@ fn obtain_input() -> StatelessInput {
     }
 
     match serde_json::from_str::<StatelessInput>(&json_content) {
-        Ok(input) => {
-            input
-        }
+        Ok(input) => input,
         Err(e) => {
             panic!("Failed to parse {} as StatelessInput: {}", path, e)
         }
