@@ -15,12 +15,21 @@ cd stateless-exec
 You can also use the `geth_evm` tool to perform transaction execution without state:
 
 ```bash
-./geth_evm t8n \
+git clone https://github.com/ethereum/go-ethereum.git
+cd go-ethereum/cmd/evm
+GOOS=linux GOARCH=riscv64 go build -o evm
+```
+
+```bash
+./evm t8n \
   --input.alloc=./assets/alloc.json \
   --input.txs=./assets/tx.json \
   --input.env=./assets/env.json \
   --state.fork=Prague
 ```
+
+_you would have to modify the path to the assets directory, it is recommended to use the path from root not relative path_
+
 
 ## Input Files
 
